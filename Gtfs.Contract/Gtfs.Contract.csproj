@@ -53,6 +53,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequiredAttribute.cs" />
     <Compile Include="Stop.cs" />
+    <Compile Include="Transfer.cs" />
+    <Compile Include="TransferType.cs" />
     <Compile Include="Trip.cs" />
     <Compile Include="TripDirectionId.cs" />
     <Compile Include="WheelchairBoarding.cs" />
