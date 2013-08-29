@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Gtfs.Contract
 {
-	public class Feed
+	public class GtfsFeed
 	{
 		[Required]
 		public List<Agency> Agency { get; set; }

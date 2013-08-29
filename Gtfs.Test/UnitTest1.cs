@@ -28,7 +28,7 @@ namespace Gtfs.Test
 
 			Assert.IsTrue(File.Exists(zipPath), "File not found: {0}", Path.GetFullPath(zipPath));
 
-			Feed gtfs;
+			GtfsFeed gtfs;
 
 			using (FileStream stream = File.Open(zipPath, FileMode.Open, FileAccess.Read))
 			{
@@ -37,6 +37,11 @@ namespace Gtfs.Test
 
 			Assert.IsNotNull(gtfs, "The GTFS object cannot be null");
 			Assert.IsNotNull(gtfs.Agency, "The agency list cannot be null.");
+			Assert.IsNotNull(gtfs.Stops, "The stops list cannot be null.");
+			Assert.IsNotNull(gtfs.Routes, "The routes list cannot be null.");
+			Assert.IsNotNull(gtfs.Trips, "The trips list cannot be null.");
+			Assert.IsNotNull(gtfs.StopTimes, "The stop_times list cannot be null.");
+			Assert.IsNotNull(gtfs.Calendar, "The calendar list cannot be null.");
 
 		}
 	}

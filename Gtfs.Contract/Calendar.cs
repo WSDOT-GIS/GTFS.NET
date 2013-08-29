@@ -22,9 +22,10 @@ namespace Gtfs.Contract
 		[Required]
 		public bool sunday { get; set; }
 
+		// TODO: start_date and end_date should really be a different type, e.g. timespan.
 		[Required]
-		public DateTime start_date { get; set; }
+		public string start_date { get; set; }
 		[Required]
-		public DateTime end_date { get; set; }
+		public string end_date { get; set; }
 	}
 }
