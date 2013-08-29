@@ -37,6 +37,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Agency.cs" />
+    <Compile Include="Calendar.cs" />
+    <Compile Include="PickupOrDropOffType.cs" />
+    <Compile Include="StopTime.cs" />
     <Compile Include="Route.cs" />
     <Compile Include="RouteType.cs" />
     <Compile Include="StopLocationType.cs" />
