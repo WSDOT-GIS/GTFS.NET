@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Gtdf.Contract")]
+[assembly: AssemblyTitle("Gtfs.Contract")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("WSDOT")]
-[assembly: AssemblyProduct("Gtdf.Contract")]
+[assembly: AssemblyProduct("Gtfs.Contract")]
 [assembly: AssemblyCopyright("Copyright © WSDOT 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gtdf.Contract
+namespace Gtfs.Contract
 {
 	public class Agency
 	{
