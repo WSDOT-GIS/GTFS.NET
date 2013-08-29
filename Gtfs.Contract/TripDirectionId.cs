@@ -5,10 +5,9 @@ using System.Text;
 
 namespace Gtfs.Contract
 {
-	public enum WheelchairAccessibility
+	public enum TripDirectionId
 	{
-		NoInformation = 0,
-		SomeAccessibility = 1,
-		NoAccessibility = 2
+		MainDirection = 0,
+		OppositeDirection = 1
 	}
 }

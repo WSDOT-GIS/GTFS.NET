@@ -22,7 +22,7 @@ namespace Gtfs.Contract
 		public StopLocationType? location_type { get; set; }
 		public string parent_station { get; set; }
 		public string stop_timezone { get; set; }
-		public WheelchairBoarding? wheelchair_boarding { get; set; }
+		public WheelchairAccessibility? wheelchair_boarding { get; set; }
 
 	}
 }
