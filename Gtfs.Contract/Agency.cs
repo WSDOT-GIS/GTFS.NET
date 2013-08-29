@@ -10,16 +10,19 @@ namespace Gtfs.Contract
 		public string agency_id { get; set; }
 
 		/// <summary>Required. The agency_name field contains the full name of the transit agency. Google Maps will display this name.</summary>
+		[Required]
 		public string agency_name { get; set; }
 
 		/// <summary>
 		/// Required. The agency_url field contains the URL of the transit agency. The value must be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. See http://www.w3.org/Addressing/URL/4_URI_Recommentations.html for a description of how to create fully qualified URL values.
 		/// </summary>
+		[Required]
 		public Uri agency_url { get; set; }
 
 		/// <summary>
 		/// Required. The agency_timezone field contains the timezone where the transit agency is located. Timezone names never contain the space character but may contain an underscore. Please refer to http://en.wikipedia.org/wiki/List_of_tz_zones for a list of valid values. If multiple agencies are specified in the feed, each must have the same agency_timezone.
 		/// </summary>
+		[Required]
 		public string agency_timezone { get; set; }
 
 		/// <summary>
