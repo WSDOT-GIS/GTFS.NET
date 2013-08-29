@@ -15,7 +15,7 @@ namespace Gtfs.Contract
 		[Required]
 		public decimal stop_lon { get; set; }
 		public string zone_id { get; set; }
-		public Uri stop_url { get; set; }
+		public string stop_url { get; set; }
 		public StopLocationType? location_type { get; set; }
 		public string parent_station { get; set; }
 		public string stop_timezone { get; set; }

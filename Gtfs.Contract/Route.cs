@@ -20,7 +20,7 @@ namespace Gtfs.Contract
 		[Required]
 		public RouteType route_type { get; set; }
 
-		public Uri route_url { get; set; }
+		public string route_url { get; set; }
 
 		public int? route_color { get; set; }
 

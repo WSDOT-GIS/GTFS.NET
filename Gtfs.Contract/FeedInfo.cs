@@ -8,7 +8,7 @@ namespace Gtfs.Contract
 		public string feed_publisher_name { get; set; }
 
 		[Required]
-		public Uri feed_publisher_url { get; set; }
+		public string feed_publisher_url { get; set; }
 
 		[Required]
 		public string feed_lang { get; set; }

@@ -17,7 +17,7 @@ namespace Gtfs.Contract
 		/// Required. The agency_url field contains the URL of the transit agency. The value must be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. See http://www.w3.org/Addressing/URL/4_URI_Recommentations.html for a description of how to create fully qualified URL values.
 		/// </summary>
 		[Required]
-		public Uri agency_url { get; set; }
+		public string agency_url { get; set; }
 
 		/// <summary>
 		/// Required. The agency_timezone field contains the timezone where the transit agency is located. Timezone names never contain the space character but may contain an underscore. Please refer to http://en.wikipedia.org/wiki/List_of_tz_zones for a list of valid values. If multiple agencies are specified in the feed, each must have the same agency_timezone.
@@ -38,6 +38,6 @@ namespace Gtfs.Contract
 		/// <summary>
 		/// Optional. The agency_fare_url specifies the URL of a web page that allows a rider to purchase tickets or other fare instruments for that agency online. The value must be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. See http://www.w3.org/Addressing/URL/4_URI_Recommentations.html for a description of how to create fully qualified URL values. 
 		/// </summary>
-		public Uri agency_fare_url { get; set; }
+		public string agency_fare_url { get; set; }
 	}
 }
