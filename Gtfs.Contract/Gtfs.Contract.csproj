@@ -42,6 +42,7 @@
     <Compile Include="ExceptionType.cs" />
     <Compile Include="FareAttribute.cs" />
     <Compile Include="FareRule.cs" />
+    <Compile Include="FeedInfo.cs" />
     <Compile Include="Frequency.cs" />
     <Compile Include="PaymentMethod.cs" />
     <Compile Include="PickupOrDropOffType.cs" />
