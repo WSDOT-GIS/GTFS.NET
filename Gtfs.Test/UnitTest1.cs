@@ -36,12 +36,8 @@ namespace Gtfs.Test
 			}
 
 			Assert.IsNotNull(gtfs, "The GTFS object cannot be null");
-
 			Assert.IsNotNull(gtfs.Agency, "The agency list cannot be null.");
 
-			
-
-			////this.TestContext.WriteLine(gtfs.SerializeToString());
 		}
 	}
 }

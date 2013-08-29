@@ -21,37 +21,8 @@ namespace Gtfs.IO
 			{
 				var csvReader = new CsvReader(streamReader);
 				var agency = new Agency();
-
-				//agencies = csvReader.GetRecords<Agency>().ToList();
-
 				csvReader.Configuration.WillThrowOnMissingField = false;
-
-				while (csvReader.Read())
-				{
-					string tempStr;
-					if (csvReader.TryGetField<string>("agency_id", out tempStr))
-					{
-						agency.agency_id = tempStr;
-					}
-					agency.agency_name = csvReader.GetField<string>("agency_name");
-					agency.agency_url = csvReader.GetField<string>("agency_url");
-					agency.agency_timezone = csvReader.GetField<string>("agency_timezone");
-
-					if (csvReader.TryGetField<string>("agency_lang", out tempStr))
-					{
-						agency.agency_lang = tempStr;
-					}
-					if (csvReader.TryGetField<string>("agency_phone", out tempStr))
-					{
-						agency.agency_phone = tempStr;
-					}
-					string tempUri;
-					if (csvReader.TryGetField<string>("agency_fare_url", out tempUri))
-					{
-						agency.agency_url = tempUri;
-					}
-					agencies.Add(agency);
-				}
+				agencies = csvReader.GetRecords<Agency>().ToList();
 			}
 
 			return agencies;
