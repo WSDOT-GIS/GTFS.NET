@@ -40,6 +40,8 @@
     <Compile Include="Calendar.cs" />
     <Compile Include="CalendarDate.cs" />
     <Compile Include="ExceptionType.cs" />
+    <Compile Include="FareAttribute.cs" />
+    <Compile Include="PaymentMethod.cs" />
     <Compile Include="PickupOrDropOffType.cs" />
     <Compile Include="StopTime.cs" />
     <Compile Include="Route.cs" />
