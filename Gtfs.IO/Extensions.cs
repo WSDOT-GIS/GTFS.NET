@@ -10,5 +10,10 @@ namespace Gtfs.IO
 		{
 			return DateTime.ParseExact(s, Resources.DateFormat, CultureInfo.InvariantCulture);
 		}
+
+		public static DateTime? ParseGtfsNullableDate(this string s)
+		{
+			return string.IsNullOrWhiteSpace(s) ? default(DateTime?) : s.ParseGtfsDate();
+		}
 	}
 }
