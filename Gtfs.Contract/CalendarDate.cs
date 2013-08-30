@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 namespace Gtfs.Contract
 {
 	public class CalendarDate
@@ -7,7 +8,7 @@ namespace Gtfs.Contract
 		public string service_id { get; set; }
 
 		[Required]
-		public string /*DateTime*/ date { get; set; }
+		public DateTime date { get; set; }
 
 		[Required]
 		public ExceptionType exception_type { get; set; }

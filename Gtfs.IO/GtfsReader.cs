@@ -28,6 +28,10 @@ namespace Gtfs.IO
 				{
 					csvReader.Configuration.RegisterClassMap<CalendarMap>();
 				}
+				else if (t == typeof(CalendarDate))
+				{
+					csvReader.Configuration.RegisterClassMap<CalendarDateMap>();
+				}
 				list = csvReader.GetRecords<T>().ToList();
 			}
 
