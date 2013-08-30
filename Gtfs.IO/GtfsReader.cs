@@ -1,5 +1,7 @@
 ﻿using CsvHelper;
 using Gtfs.Contract;
+using Gtfs.IO.ClassMap;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
@@ -19,10 +21,13 @@ namespace Gtfs.IO
 			using (var streamReader = new StreamReader(stream, UTF8Encoding.UTF8))
 			{
 				var csvReader = new CsvReader(streamReader);
-				////var map = csvReader.Configuration.AutoMap<T>();
-				// TODO: Properly handle dates.
-				var agency = new T();
 				csvReader.Configuration.WillThrowOnMissingField = false;
+				// Add maps for types.
+				Type t = typeof(T);
+				if (t == typeof(Calendar))
+				{
+					csvReader.Configuration.RegisterClassMap<CalendarMap>();
+				}
 				list = csvReader.GetRecords<T>().ToList();
 			}
 
@@ -93,8 +98,6 @@ namespace Gtfs.IO
 
 			var feedInfo = zip.ParseCsv<FeedInfo>("feed_info.txt");
 			feed.FeedInfo = feedInfo != null ? feedInfo.FirstOrDefault() : null;
-
-			// TODO: Read other files from ZIP.
 
 			return feed;
 		}

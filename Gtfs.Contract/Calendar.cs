@@ -1,4 +1,5 @@
 ﻿
+using System;
 namespace Gtfs.Contract
 {
 	public class Calendar
@@ -23,8 +24,8 @@ namespace Gtfs.Contract
 
 		// TODO: start_date and end_date should really be a different type, e.g. timespan.
 		[Required]
-		public string start_date { get; set; }
+		public DateTime start_date { get; set; }
 		[Required]
-		public string end_date { get; set; }
+		public DateTime end_date { get; set; }
 	}
 }
