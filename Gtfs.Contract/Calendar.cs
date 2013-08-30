@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace Gtfs.Contract
 {
 	public class Calendar

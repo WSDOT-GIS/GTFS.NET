@@ -10,6 +10,6 @@ namespace Gtfs.Contract
 		[Required]
 		public TransferType? transfer_type { get; set; }
 
-		public uint? min_transfer_time { get; set; }
+		public int? min_transfer_time { get; set; }
 	}
 }

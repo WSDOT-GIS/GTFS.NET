@@ -1,13 +1,10 @@
-﻿using System;
+﻿using CsvHelper;
+using Gtfs.Contract;
 using System.Collections.Generic;
+using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.IO.Compression;
-using System.IO;
-using Gtfs.Contract;
-using System.Diagnostics;
-using CsvHelper;
 
 namespace Gtfs.IO
 {

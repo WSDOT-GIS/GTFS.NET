@@ -1,10 +1,7 @@
-﻿using System;
+﻿using Gtfs.Contract;
+using Gtfs.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
-using System.Reflection;
-using Gtfs.IO;
-using Gtfs.Contract;
-using ServiceStack.Text;
 using System.Linq;
 
 namespace Gtfs.Test
@@ -58,8 +55,8 @@ namespace Gtfs.Test
 				Assert.IsNotNull(stop.stop_id);
 				Assert.IsNotNull(stop.stop_name);
 				// Test to see if the lat is a "valid WGS 84 latitude".
-				Assert.IsTrue(stop.stop_lat >= -90 && stop.stop_lat <= 90);
-				Assert.IsTrue(stop.stop_lon >= -180 && stop.stop_lon <= 180);
+				Assert.IsTrue(stop.stop_lat.IsValidLatitude());
+				Assert.IsTrue(stop.stop_lon.IsValidLongitude());
 			}
 
 			foreach (var route in gtfs.Routes)
@@ -94,11 +91,41 @@ namespace Gtfs.Test
 				Assert.IsNotNull(item.end_date);
 			}
 
-			CollectionAssert.AllItemsAreUnique(gtfs.CalendarDates.Select(g => string.Concat(g.service_id, g.date)).ToArray(), "Each (service_id, date) pair can only appear once in calendar_dates.txt.");
-			foreach (var item in gtfs.CalendarDates)
+			if (gtfs.CalendarDates != null)
 			{
-				Assert.IsNotNull(item.service_id);
-				Assert.IsNotNull(item.date);
+				CollectionAssert.AllItemsAreUnique(gtfs.CalendarDates.Select(g => string.Concat(g.service_id, g.date)).ToArray(), "Each (service_id, date) pair can only appear once in calendar_dates.txt.");
+				foreach (var item in gtfs.CalendarDates)
+				{
+					Assert.IsNotNull(item.service_id);
+					Assert.IsNotNull(item.date);
+				} 
+			}
+
+			if (gtfs.FareAttributes != null)
+			{
+				CollectionAssert.AllItemsAreUnique(gtfs.FareAttributes.Select(g => g.fare_id).ToArray());
+				foreach (var item in gtfs.FareAttributes)
+				{
+					Assert.IsNotNull(item.fare_id);
+					Assert.IsTrue(item.price >= 0);
+					Assert.IsTrue(!item.transfers.HasValue || (item.transfers.Value.IsInRange(0, 2)));
+				} 
+			}
+
+			if (gtfs.FareRules != null)
+			{
+				CollectionAssert.AllItemsAreNotNull(gtfs.FareRules.Select(g => g.fare_id).ToArray()); 
+			}
+
+			if (gtfs.Shapes != null)
+			{
+				CollectionAssert.AllItemsAreUnique(gtfs.Shapes.Select(g => g.shape_id).ToArray());
+				foreach (var item in gtfs.Shapes)
+				{
+					Assert.IsTrue(item.shape_pt_lat.IsValidLatitude());
+					Assert.IsTrue(item.shape_pt_lon.IsValidLongitude());
+					Assert.IsTrue(item.shape_pt_sequence >= 0);
+				}
 			}
 		}
 	}

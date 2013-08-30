@@ -17,7 +17,7 @@ namespace Gtfs.Contract
 		public string stop_id { get; set; }
 
 		[Required]
-		public uint stop_sequence { get; set; }
+		public int stop_sequence { get; set; }
 
 		public string stop_headsign { get; set; }
 

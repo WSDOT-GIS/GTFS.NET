@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace Gtfs.Contract
 {
 	public class Stop
@@ -11,9 +10,9 @@ namespace Gtfs.Contract
 		public string stop_name { get; set; }
 		public string stop_desc { get; set; }
 		[Required]
-		public decimal stop_lat { get; set; }
+		public double stop_lat { get; set; }
 		[Required]
-		public decimal stop_lon { get; set; }
+		public double stop_lon { get; set; }
 		public string zone_id { get; set; }
 		public string stop_url { get; set; }
 		public StopLocationType? location_type { get; set; }
