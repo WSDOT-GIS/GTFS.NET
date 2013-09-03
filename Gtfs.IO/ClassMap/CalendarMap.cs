@@ -1,7 +1,7 @@
 ﻿using CsvHelper.Configuration;
-using Gtfs.Contract;
+using Wsdot.Gtfs.Contract;
 
-namespace Gtfs.IO.ClassMap
+namespace Wsdot.Gtfs.IO.ClassMap
 {
 	public class CalendarMap: CsvClassMap<Calendar>
 	{

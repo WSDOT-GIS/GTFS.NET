@@ -1,5 +1,5 @@
 ﻿
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// Fare information for a transit organization's routes.

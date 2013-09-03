@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	public class GtfsFeed
 	{

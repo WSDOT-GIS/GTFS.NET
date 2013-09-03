@@ -1,5 +1,5 @@
 ﻿
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// Indicates when a fare must be paid. 

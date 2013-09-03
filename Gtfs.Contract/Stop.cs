@@ -1,5 +1,5 @@
 ﻿
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// Individual location where vehicles pick up or drop off passengers.

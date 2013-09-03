@@ -1,5 +1,5 @@
 ﻿
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// <para>The fare_rules table allows you to specify how fares in fare_attributes.txt apply to an itinerary. Most fare structures use some combination of the following rules:</para>

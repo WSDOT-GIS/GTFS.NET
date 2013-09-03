@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// The field column must be included in your feed, and a value must be provided for each record. 

@@ -1,5 +1,5 @@
 ﻿
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// A transit agency that provides the data in a feed.

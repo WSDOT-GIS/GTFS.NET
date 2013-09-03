@@ -1,4 +1,4 @@
-﻿namespace Gtfs.Contract
+﻿namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// A binary value that indicates the direction of travel for a trip. 

@@ -7,7 +7,7 @@
     <ProjectGuid>{D0F94838-10A7-4BA2-BBEE-41B342641554}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gtfs.IO</RootNamespace>
+    <RootNamespace>Wsdot.Gtfs.IO</RootNamespace>
     <AssemblyName>Gtfs.IO</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

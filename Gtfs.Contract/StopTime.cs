@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// Times that a vehicle arrives at and departs from individual stops for each trip.

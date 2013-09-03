@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// Headway (time between trips) for routes with variable frequency of service.

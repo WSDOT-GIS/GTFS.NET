@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// Additional information about the feed itself, including publisher, version, and expiration information.

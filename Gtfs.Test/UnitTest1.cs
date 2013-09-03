@@ -1,25 +1,18 @@
-﻿using Gtfs.Contract;
-using Gtfs.IO;
+﻿using Wsdot.Gtfs.Contract;
+using Wsdot.Gtfs.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using System.Linq;
 
-namespace Gtfs.Test
+namespace Wsdot.Gtfs.Test
 {
 	[TestClass]
 	public class UnitTest1
 	{
 
-		private TestContext _testContext;
-
-		public TestContext TestContext
-		{
-			get { return _testContext; }
-			set { _testContext = value; }
-		}
-
 
 		[TestMethod]
+		[TestProperty("gtfsFile", "sample-feed.zip")]
 		public void ReadSampleGtfs()
 		{
 			string zipPath = "sample-feed.zip";

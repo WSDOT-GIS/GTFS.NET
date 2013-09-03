@@ -1,8 +1,8 @@
-﻿using Gtfs.IO.Properties;
+﻿using Wsdot.Gtfs.IO.Properties;
 using System;
 using System.Globalization;
 
-namespace Gtfs.IO
+namespace Wsdot.Gtfs.IO
 {
 	public static class Extensions
 	{

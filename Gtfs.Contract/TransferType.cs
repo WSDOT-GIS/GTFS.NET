@@ -1,5 +1,5 @@
 ﻿
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// The transfer_type field specifies the type of connection for the specified (<see cref="Transfer.from_stop_id"/>, 

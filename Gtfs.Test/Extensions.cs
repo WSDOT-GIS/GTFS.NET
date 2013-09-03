@@ -1,5 +1,5 @@
 ﻿
-namespace Gtfs.Test
+namespace Wsdot.Gtfs.Test
 {
 	public static class Extensions
 	{

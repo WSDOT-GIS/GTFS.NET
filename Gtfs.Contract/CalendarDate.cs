@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// Exceptions for the service IDs defined in the calendar.txt file.

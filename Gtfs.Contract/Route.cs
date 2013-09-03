@@ -1,4 +1,4 @@
-﻿namespace Gtfs.Contract
+﻿namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// Transit route. A route is a group of <see cref="Trip">trips</see> that are displayed to riders as a single service.

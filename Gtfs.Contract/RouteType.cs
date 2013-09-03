@@ -1,4 +1,4 @@
-﻿namespace Gtfs.Contract
+﻿namespace Wsdot.Gtfs.Contract
 {
 	/// <summary>
 	/// Describes the type of transportation used on a route.

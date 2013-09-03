@@ -1,6 +1,6 @@
 ﻿using CsvHelper;
-using Gtfs.Contract;
-using Gtfs.IO.ClassMap;
+using Wsdot.Gtfs.Contract;
+using Wsdot.Gtfs.IO.ClassMap;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using System.IO.Compression;
 using System.Linq;
 using System.Text;
 
-namespace Gtfs.IO
+namespace Wsdot.Gtfs.IO
 {
 	public static class GtfsReader
 	{

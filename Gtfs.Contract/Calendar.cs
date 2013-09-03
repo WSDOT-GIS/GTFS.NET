@@ -1,6 +1,6 @@
 ﻿
 using System;
-namespace Gtfs.Contract
+namespace Wsdot.Gtfs.Contract
 {
 	public class Calendar
 	{
