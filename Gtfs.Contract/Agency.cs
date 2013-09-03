@@ -2,7 +2,7 @@
 namespace Gtfs.Contract
 {
 	/// <summary>
-	/// One or more transit agencies that provide the data in this feed.
+	/// A transit agency that provides the data in a feed.
 	/// </summary>
 	public class Agency
 	{
