@@ -32,7 +32,20 @@ namespace Wsdot.Gtfs.IO
 				{
 					csvReader.Configuration.RegisterClassMap<CalendarDateMap>();
 				}
-				list = csvReader.GetRecords<T>().ToList();
+				else if (t == typeof(Route))
+				{
+					csvReader.Configuration.RegisterClassMap<RouteMap>();
+				}
+
+				try
+				{
+					list = csvReader.GetRecords<T>().ToList();
+				}
+				catch (Exception ex)
+				{
+					System.Diagnostics.Trace.TraceError("Error getting records.\t{0}\n{1}", typeof(T), ex);
+					throw;
+				}
 			}
 
 			return list;
