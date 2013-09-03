@@ -1,6 +1,9 @@
 ﻿
 namespace Gtfs.Contract
 {
+	/// <summary>
+	/// One or more transit agencies that provide the data in this feed.
+	/// </summary>
 	public class Agency
 	{
 		/// <summary>

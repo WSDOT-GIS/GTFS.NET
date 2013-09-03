@@ -60,6 +60,7 @@
     <Compile Include="TransferType.cs" />
     <Compile Include="Trip.cs" />
     <Compile Include="TripDirectionId.cs" />
+    <Compile Include="UniqueAttribute.cs" />
     <Compile Include="WheelchairBoarding.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
