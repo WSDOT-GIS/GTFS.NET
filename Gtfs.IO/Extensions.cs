@@ -1,6 +1,6 @@
-﻿using Wsdot.Gtfs.IO.Properties;
-using System;
+﻿using System;
 using System.Globalization;
+using Wsdot.Gtfs.IO.Properties;
 
 namespace Wsdot.Gtfs.IO
 {

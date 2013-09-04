@@ -1,12 +1,12 @@
 ﻿using CsvHelper;
-using Wsdot.Gtfs.Contract;
-using Wsdot.Gtfs.IO.ClassMap;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Text;
+using Wsdot.Gtfs.Contract;
+using Wsdot.Gtfs.IO.ClassMap;
 
 namespace Wsdot.Gtfs.IO
 {
