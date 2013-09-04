@@ -15,5 +15,22 @@ namespace Wsdot.Gtfs.IO
 		{
 			return string.IsNullOrWhiteSpace(s) ? default(DateTime?) : s.ParseGtfsDate();
 		}
+
+		public static TimeSpan? ParseGtfsNullableTimeSpan(this string s)
+		{
+			if (string.IsNullOrWhiteSpace(s))
+			{
+				return null;
+			}
+			TimeSpan ts;
+			if (TimeSpan.TryParse(s, out ts))
+			{
+				return ts;
+			}
+			else
+			{
+				return null;
+			}
+		}
 	}
 }

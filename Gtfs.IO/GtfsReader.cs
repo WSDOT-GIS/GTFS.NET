@@ -36,6 +36,10 @@ namespace Wsdot.Gtfs.IO
 				{
 					csvReader.Configuration.RegisterClassMap<RouteMap>();
 				}
+				else if (t == typeof(StopTime))
+				{
+					csvReader.Configuration.RegisterClassMap<StopTimeMap>();
+				}
 
 				try
 				{

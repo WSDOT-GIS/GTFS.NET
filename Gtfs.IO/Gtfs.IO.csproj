@@ -45,6 +45,7 @@
     <Compile Include="ClassMap\CalendarMap.cs" />
     <Compile Include="ClassMap\FeedInfoMap.cs" />
     <Compile Include="ClassMap\RouteMap.cs" />
+    <Compile Include="ClassMap\StopTimeMap.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="GtfsReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

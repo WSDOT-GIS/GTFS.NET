@@ -19,7 +19,7 @@ namespace Wsdot.Gtfs.Contract
 		///  <para>You must specify arrival and departure times for the first and last stops in a trip. </para>
 		/// </summary>
 		[Required]
-		public TimeSpan arrival_time { get; set; }
+		public TimeSpan? arrival_time { get; set; }
 
 		/// <summary>
 		/// <para>The <strong>departure_time</strong> specifies the departure time from a specific stop for a specific trip on a route. The time is measured from "noon minus 12h" (effectively midnight, except for days on which daylight savings time changes occur) at the beginning of the service date.  For times occurring after midnight on the service date, enter the time as a value greater than 24:00:00 in HH:MM:SS local time for the day on which the trip schedule begins. If you don't have separate times for arrival and departure at a stop, enter the same value for <strong>arrival_time</strong> and <strong>departure_time</strong>.</para>
@@ -27,7 +27,7 @@ namespace Wsdot.Gtfs.Contract
 		/// <para>You must specify arrival and departure times for the first and last stops in a trip.</para>
 		/// </summary>
 		[Required]
-		public TimeSpan departure_time { get; set; }
+		public TimeSpan? departure_time { get; set; }
 
 		/// <summary>
 		///  <para>The stop_id field contains an ID that uniquely identifies a stop. Multiple routes may use the same stop. The stop_id is referenced from the stops.txt file. If location_type is used in stops.txt, all stops referenced in stop_times.txt must have location_type of 0.</para>
