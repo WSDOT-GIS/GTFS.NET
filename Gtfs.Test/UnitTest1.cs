@@ -99,8 +99,6 @@ namespace Wsdot.Gtfs.Test
 			foreach (var stopTime in gtfs.StopTimes)
 			{
 				Assert.IsNotNull(stopTime.trip_id, "stopTime.trip_id cannot be null.");
-				Assert.IsNotNull(stopTime.arrival_time, "stopTime.arrival_time cannot be null.");
-				Assert.IsNotNull(stopTime.departure_time, "stopTime.departure_time cannot be null.");
 				Assert.IsNotNull(stopTime.stop_id, "stopTime.stop_id cannot be null.");
 				Assert.IsNotNull(stopTime.stop_sequence, "stopTime.stop_sequence cannot be null.");
 			}
