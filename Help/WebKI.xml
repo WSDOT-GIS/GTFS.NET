@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Added enumeration member" Url="html/T_Wsdot_Gtfs_Contract_ExceptionType.htm" />
+  <HelpKINode Title="Agency class">
+    <HelpKINode Title="Agency Class" Url="html/T_Wsdot_Gtfs_Contract_Agency.htm" />
+    <HelpKINode Title="Agency Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Agency.htm" />
+    <HelpKINode Title="about Agency class" Url="html/T_Wsdot_Gtfs_Contract_Agency.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Agency.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_Agency__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Agency.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Agency.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Agency property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Agency.htm" />
+  <HelpKINode Title="Agency.Agency constructor" Url="html/M_Wsdot_Gtfs_Contract_Agency__ctor.htm" />
+  <HelpKINode Title="Agency.agency_fare_url property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_fare_url.htm" />
+  <HelpKINode Title="Agency.agency_id property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_id.htm" />
+  <HelpKINode Title="Agency.agency_lang property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_lang.htm" />
+  <HelpKINode Title="Agency.agency_name property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_name.htm" />
+  <HelpKINode Title="Agency.agency_phone property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_phone.htm" />
+  <HelpKINode Title="Agency.agency_timezone property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_timezone.htm" />
+  <HelpKINode Title="Agency.agency_url property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_url.htm" />
+  <HelpKINode Title="agency_fare_url property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_fare_url.htm" />
+  <HelpKINode Title="agency_id property">
+    <HelpKINode Title="Agency.agency_id Property " Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_id.htm" />
+    <HelpKINode Title="Route.agency_id Property " Url="html/P_Wsdot_Gtfs_Contract_Route_agency_id.htm" />
+  </HelpKINode>
+  <HelpKINode Title="agency_lang property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_lang.htm" />
+  <HelpKINode Title="agency_name property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_name.htm" />
+  <HelpKINode Title="agency_phone property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_phone.htm" />
+  <HelpKINode Title="agency_timezone property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_timezone.htm" />
+  <HelpKINode Title="agency_url property" Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_url.htm" />
+  <HelpKINode Title="arrival_time property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_arrival_time.htm" />
+  <HelpKINode Title="BetweenRouteTransfersImpossible enumeration member" Url="html/T_Wsdot_Gtfs_Contract_TransferType.htm" />
+  <HelpKINode Title="block_id property" Url="html/P_Wsdot_Gtfs_Contract_Trip_block_id.htm" />
+  <HelpKINode Title="Bus enumeration member" Url="html/T_Wsdot_Gtfs_Contract_RouteType.htm" />
+  <HelpKINode Title="CableCar enumeration member" Url="html/T_Wsdot_Gtfs_Contract_RouteType.htm" />
+  <HelpKINode Title="Calendar class">
+    <HelpKINode Title="Calendar Class" Url="html/T_Wsdot_Gtfs_Contract_Calendar.htm" />
+    <HelpKINode Title="Calendar Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Calendar.htm" />
+    <HelpKINode Title="about Calendar class" Url="html/T_Wsdot_Gtfs_Contract_Calendar.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Calendar.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_Calendar__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Calendar.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Calendar.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Calendar property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Calendar.htm" />
+  <HelpKINode Title="Calendar.Calendar constructor" Url="html/M_Wsdot_Gtfs_Contract_Calendar__ctor.htm" />
+  <HelpKINode Title="Calendar.end_date property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_end_date.htm" />
+  <HelpKINode Title="Calendar.friday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_friday.htm" />
+  <HelpKINode Title="Calendar.monday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_monday.htm" />
+  <HelpKINode Title="Calendar.saturday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_saturday.htm" />
+  <HelpKINode Title="Calendar.service_id property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_service_id.htm" />
+  <HelpKINode Title="Calendar.start_date property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_start_date.htm" />
+  <HelpKINode Title="Calendar.sunday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_sunday.htm" />
+  <HelpKINode Title="Calendar.thursday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_thursday.htm" />
+  <HelpKINode Title="Calendar.tuesday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_tuesday.htm" />
+  <HelpKINode Title="Calendar.wednesday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_wednesday.htm" />
+  <HelpKINode Title="CalendarDate class">
+    <HelpKINode Title="CalendarDate Class" Url="html/T_Wsdot_Gtfs_Contract_CalendarDate.htm" />
+    <HelpKINode Title="CalendarDate Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_CalendarDate.htm" />
+    <HelpKINode Title="about CalendarDate class" Url="html/T_Wsdot_Gtfs_Contract_CalendarDate.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_CalendarDate.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_CalendarDate__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_CalendarDate.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_CalendarDate.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CalendarDate.CalendarDate constructor" Url="html/M_Wsdot_Gtfs_Contract_CalendarDate__ctor.htm" />
+  <HelpKINode Title="CalendarDate.date property" Url="html/P_Wsdot_Gtfs_Contract_CalendarDate_date.htm" />
+  <HelpKINode Title="CalendarDate.exception_type property" Url="html/P_Wsdot_Gtfs_Contract_CalendarDate_exception_type.htm" />
+  <HelpKINode Title="CalendarDate.service_id property" Url="html/P_Wsdot_Gtfs_Contract_CalendarDate_service_id.htm" />
+  <HelpKINode Title="CalendarDateMap class">
+    <HelpKINode Title="CalendarDateMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm" />
+    <HelpKINode Title="CalendarDateMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm" />
+    <HelpKINode Title="about CalendarDateMap class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CalendarDateMap.CalendarDateMap constructor" Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap__ctor.htm" />
+  <HelpKINode Title="CalendarDateMap.CreateMap method" Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap_CreateMap.htm" />
+  <HelpKINode Title="CalendarDates property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_CalendarDates.htm" />
+  <HelpKINode Title="CalendarMap class">
+    <HelpKINode Title="CalendarMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm" />
+    <HelpKINode Title="CalendarMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm" />
+    <HelpKINode Title="about CalendarMap class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarMap__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CalendarMap.CalendarMap constructor" Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarMap__ctor.htm" />
+  <HelpKINode Title="CalendarMap.CreateMap method" Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarMap_CreateMap.htm" />
+  <HelpKINode Title="contains_id property" Url="html/P_Wsdot_Gtfs_Contract_FareRule_contains_id.htm" />
+  <HelpKINode Title="CreateMap method">
+    <HelpKINode Title="CalendarDateMap.CreateMap Method " Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap_CreateMap.htm" />
+    <HelpKINode Title="CalendarMap.CreateMap Method " Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarMap_CreateMap.htm" />
+    <HelpKINode Title="FeedInfoMap.CreateMap Method " Url="html/M_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap_CreateMap.htm" />
+    <HelpKINode Title="RouteMap.CreateMap Method " Url="html/M_Wsdot_Gtfs_IO_ClassMap_RouteMap_CreateMap.htm" />
+    <HelpKINode Title="StopTimeMap.CreateMap Method " Url="html/M_Wsdot_Gtfs_IO_ClassMap_StopTimeMap_CreateMap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="currency_type property" Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_currency_type.htm" />
+  <HelpKINode Title="date property" Url="html/P_Wsdot_Gtfs_Contract_CalendarDate_date.htm" />
+  <HelpKINode Title="departure_time property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_departure_time.htm" />
+  <HelpKINode Title="destination_id property" Url="html/P_Wsdot_Gtfs_Contract_FareRule_destination_id.htm" />
+  <HelpKINode Title="direction_id property" Url="html/P_Wsdot_Gtfs_Contract_Trip_direction_id.htm" />
+  <HelpKINode Title="drop_off_type property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_drop_off_type.htm" />
+  <HelpKINode Title="end_date property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_end_date.htm" />
+  <HelpKINode Title="end_time property" Url="html/P_Wsdot_Gtfs_Contract_Frequency_end_time.htm" />
+  <HelpKINode Title="exact_times property" Url="html/P_Wsdot_Gtfs_Contract_Frequency_exact_times.htm" />
+  <HelpKINode Title="ExceptionType enumeration" Url="html/T_Wsdot_Gtfs_Contract_ExceptionType.htm" />
+  <HelpKINode Title="exception_type property" Url="html/P_Wsdot_Gtfs_Contract_CalendarDate_exception_type.htm" />
+  <HelpKINode Title="Extensions class">
+    <HelpKINode Title="Extensions Class" Url="html/T_Wsdot_Gtfs_IO_Extensions.htm" />
+    <HelpKINode Title="Extensions Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_Extensions.htm" />
+    <HelpKINode Title="about Extensions class" Url="html/T_Wsdot_Gtfs_IO_Extensions.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_Extensions.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_IO_Extensions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Extensions.ParseGtfsDate method" Url="html/M_Wsdot_Gtfs_IO_Extensions_ParseGtfsDate.htm" />
+  <HelpKINode Title="Extensions.ParseGtfsNullableDate method" Url="html/M_Wsdot_Gtfs_IO_Extensions_ParseGtfsNullableDate.htm" />
+  <HelpKINode Title="Extensions.ParseGtfsNullableTimeSpan method" Url="html/M_Wsdot_Gtfs_IO_Extensions_ParseGtfsNullableTimeSpan.htm" />
+  <HelpKINode Title="FareAttribute class">
+    <HelpKINode Title="FareAttribute Class" Url="html/T_Wsdot_Gtfs_Contract_FareAttribute.htm" />
+    <HelpKINode Title="FareAttribute Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FareAttribute.htm" />
+    <HelpKINode Title="about FareAttribute class" Url="html/T_Wsdot_Gtfs_Contract_FareAttribute.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FareAttribute.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_FareAttribute__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_FareAttribute.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_FareAttribute.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FareAttribute.currency_type property" Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_currency_type.htm" />
+  <HelpKINode Title="FareAttribute.FareAttribute constructor" Url="html/M_Wsdot_Gtfs_Contract_FareAttribute__ctor.htm" />
+  <HelpKINode Title="FareAttribute.fare_id property" Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_fare_id.htm" />
+  <HelpKINode Title="FareAttribute.payment_method property" Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_payment_method.htm" />
+  <HelpKINode Title="FareAttribute.price property" Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_price.htm" />
+  <HelpKINode Title="FareAttribute.transfers property" Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_transfers.htm" />
+  <HelpKINode Title="FareAttribute.transfer_duration property" Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_transfer_duration.htm" />
+  <HelpKINode Title="FareAttributes property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_FareAttributes.htm" />
+  <HelpKINode Title="FareIsPaidOnBoard enumeration member" Url="html/T_Wsdot_Gtfs_Contract_PaymentMethod.htm" />
+  <HelpKINode Title="FareMustBePaidBeforeBoarding enumeration member" Url="html/T_Wsdot_Gtfs_Contract_PaymentMethod.htm" />
+  <HelpKINode Title="FareRule class">
+    <HelpKINode Title="FareRule Class" Url="html/T_Wsdot_Gtfs_Contract_FareRule.htm" />
+    <HelpKINode Title="FareRule Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FareRule.htm" />
+    <HelpKINode Title="about FareRule class" Url="html/T_Wsdot_Gtfs_Contract_FareRule.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FareRule.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_FareRule__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_FareRule.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_FareRule.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FareRule.contains_id property" Url="html/P_Wsdot_Gtfs_Contract_FareRule_contains_id.htm" />
+  <HelpKINode Title="FareRule.destination_id property" Url="html/P_Wsdot_Gtfs_Contract_FareRule_destination_id.htm" />
+  <HelpKINode Title="FareRule.FareRule constructor" Url="html/M_Wsdot_Gtfs_Contract_FareRule__ctor.htm" />
+  <HelpKINode Title="FareRule.fare_id property" Url="html/P_Wsdot_Gtfs_Contract_FareRule_fare_id.htm" />
+  <HelpKINode Title="FareRule.origin_id property" Url="html/P_Wsdot_Gtfs_Contract_FareRule_origin_id.htm" />
+  <HelpKINode Title="FareRule.route_id property" Url="html/P_Wsdot_Gtfs_Contract_FareRule_route_id.htm" />
+  <HelpKINode Title="FareRules property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_FareRules.htm" />
+  <HelpKINode Title="fare_id property">
+    <HelpKINode Title="FareAttribute.fare_id Property " Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_fare_id.htm" />
+    <HelpKINode Title="FareRule.fare_id Property " Url="html/P_Wsdot_Gtfs_Contract_FareRule_fare_id.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FeedInfo class">
+    <HelpKINode Title="FeedInfo Class" Url="html/T_Wsdot_Gtfs_Contract_FeedInfo.htm" />
+    <HelpKINode Title="FeedInfo Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FeedInfo.htm" />
+    <HelpKINode Title="about FeedInfo class" Url="html/T_Wsdot_Gtfs_Contract_FeedInfo.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FeedInfo.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_FeedInfo__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_FeedInfo.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_FeedInfo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FeedInfo property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_FeedInfo.htm" />
+  <HelpKINode Title="FeedInfo.FeedInfo constructor" Url="html/M_Wsdot_Gtfs_Contract_FeedInfo__ctor.htm" />
+  <HelpKINode Title="FeedInfo.feed_end_date property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_end_date.htm" />
+  <HelpKINode Title="FeedInfo.feed_lang property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_lang.htm" />
+  <HelpKINode Title="FeedInfo.feed_publisher_name property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_publisher_name.htm" />
+  <HelpKINode Title="FeedInfo.feed_publisher_url property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_publisher_url.htm" />
+  <HelpKINode Title="FeedInfo.feed_start_date property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_start_date.htm" />
+  <HelpKINode Title="FeedInfo.feed_version property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_version.htm" />
+  <HelpKINode Title="FeedInfoMap class">
+    <HelpKINode Title="FeedInfoMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm" />
+    <HelpKINode Title="FeedInfoMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm" />
+    <HelpKINode Title="about FeedInfoMap class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FeedInfoMap.CreateMap method" Url="html/M_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap_CreateMap.htm" />
+  <HelpKINode Title="FeedInfoMap.FeedInfoMap constructor" Url="html/M_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap__ctor.htm" />
+  <HelpKINode Title="feed_end_date property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_end_date.htm" />
+  <HelpKINode Title="feed_lang property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_lang.htm" />
+  <HelpKINode Title="feed_publisher_name property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_publisher_name.htm" />
+  <HelpKINode Title="feed_publisher_url property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_publisher_url.htm" />
+  <HelpKINode Title="feed_start_date property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_start_date.htm" />
+  <HelpKINode Title="feed_version property" Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_version.htm" />
+  <HelpKINode Title="Ferry enumeration member" Url="html/T_Wsdot_Gtfs_Contract_RouteType.htm" />
+  <HelpKINode Title="Frequencies property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Frequencies.htm" />
+  <HelpKINode Title="Frequency class">
+    <HelpKINode Title="Frequency Class" Url="html/T_Wsdot_Gtfs_Contract_Frequency.htm" />
+    <HelpKINode Title="Frequency Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Frequency.htm" />
+    <HelpKINode Title="about Frequency class" Url="html/T_Wsdot_Gtfs_Contract_Frequency.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Frequency.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_Frequency__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Frequency.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Frequency.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Frequency.end_time property" Url="html/P_Wsdot_Gtfs_Contract_Frequency_end_time.htm" />
+  <HelpKINode Title="Frequency.exact_times property" Url="html/P_Wsdot_Gtfs_Contract_Frequency_exact_times.htm" />
+  <HelpKINode Title="Frequency.Frequency constructor" Url="html/M_Wsdot_Gtfs_Contract_Frequency__ctor.htm" />
+  <HelpKINode Title="Frequency.headway_secs property" Url="html/P_Wsdot_Gtfs_Contract_Frequency_headway_secs.htm" />
+  <HelpKINode Title="Frequency.start_time property" Url="html/P_Wsdot_Gtfs_Contract_Frequency_start_time.htm" />
+  <HelpKINode Title="Frequency.trip_id property" Url="html/P_Wsdot_Gtfs_Contract_Frequency_trip_id.htm" />
+  <HelpKINode Title="friday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_friday.htm" />
+  <HelpKINode Title="from_stop_id property" Url="html/P_Wsdot_Gtfs_Contract_Transfer_from_stop_id.htm" />
+  <HelpKINode Title="Funicular enumeration member" Url="html/T_Wsdot_Gtfs_Contract_RouteType.htm" />
+  <HelpKINode Title="Gondola enumeration member" Url="html/T_Wsdot_Gtfs_Contract_RouteType.htm" />
+  <HelpKINode Title="GtfsFeed class">
+    <HelpKINode Title="GtfsFeed Class" Url="html/T_Wsdot_Gtfs_Contract_GtfsFeed.htm" />
+    <HelpKINode Title="GtfsFeed Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_GtfsFeed.htm" />
+    <HelpKINode Title="about GtfsFeed class" Url="html/T_Wsdot_Gtfs_Contract_GtfsFeed.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_GtfsFeed.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_GtfsFeed__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_GtfsFeed.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_GtfsFeed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GtfsFeed.Agency property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Agency.htm" />
+  <HelpKINode Title="GtfsFeed.Calendar property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Calendar.htm" />
+  <HelpKINode Title="GtfsFeed.CalendarDates property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_CalendarDates.htm" />
+  <HelpKINode Title="GtfsFeed.FareAttributes property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_FareAttributes.htm" />
+  <HelpKINode Title="GtfsFeed.FareRules property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_FareRules.htm" />
+  <HelpKINode Title="GtfsFeed.FeedInfo property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_FeedInfo.htm" />
+  <HelpKINode Title="GtfsFeed.Frequencies property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Frequencies.htm" />
+  <HelpKINode Title="GtfsFeed.GtfsFeed constructor" Url="html/M_Wsdot_Gtfs_Contract_GtfsFeed__ctor.htm" />
+  <HelpKINode Title="GtfsFeed.Routes property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Routes.htm" />
+  <HelpKINode Title="GtfsFeed.Shapes property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Shapes.htm" />
+  <HelpKINode Title="GtfsFeed.Stops property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Stops.htm" />
+  <HelpKINode Title="GtfsFeed.StopTimes property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_StopTimes.htm" />
+  <HelpKINode Title="GtfsFeed.Transfers property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Transfers.htm" />
+  <HelpKINode Title="GtfsFeed.Trips property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Trips.htm" />
+  <HelpKINode Title="GtfsReader class">
+    <HelpKINode Title="GtfsReader Class" Url="html/T_Wsdot_Gtfs_IO_GtfsReader.htm" />
+    <HelpKINode Title="GtfsReader Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_GtfsReader.htm" />
+    <HelpKINode Title="about GtfsReader class" Url="html/T_Wsdot_Gtfs_IO_GtfsReader.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_GtfsReader.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_IO_GtfsReader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GtfsReader.ReadGtfs method" Url="html/M_Wsdot_Gtfs_IO_GtfsReader_ReadGtfs.htm" />
+  <HelpKINode Title="headway_secs property" Url="html/P_Wsdot_Gtfs_Contract_Frequency_headway_secs.htm" />
+  <HelpKINode Title="location_type property" Url="html/P_Wsdot_Gtfs_Contract_Stop_location_type.htm" />
+  <HelpKINode Title="MainDirection enumeration member" Url="html/T_Wsdot_Gtfs_Contract_TripDirectionId.htm" />
+  <HelpKINode Title="MinimumRequired enumeration member" Url="html/T_Wsdot_Gtfs_Contract_TransferType.htm" />
+  <HelpKINode Title="min_transfer_time property" Url="html/P_Wsdot_Gtfs_Contract_Transfer_min_transfer_time.htm" />
+  <HelpKINode Title="monday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_monday.htm" />
+  <HelpKINode Title="MustCoordinateWithDriverToArrange enumeration member" Url="html/T_Wsdot_Gtfs_Contract_PickupOrDropOffType.htm" />
+  <HelpKINode Title="MustPhoneAgencyToArrange enumeration member" Url="html/T_Wsdot_Gtfs_Contract_PickupOrDropOffType.htm" />
+  <HelpKINode Title="NoAccessibility enumeration member" Url="html/T_Wsdot_Gtfs_Contract_WheelchairAccessibility.htm" />
+  <HelpKINode Title="NoInformation enumeration member" Url="html/T_Wsdot_Gtfs_Contract_WheelchairAccessibility.htm" />
+  <HelpKINode Title="NoneAvailable enumeration member" Url="html/T_Wsdot_Gtfs_Contract_PickupOrDropOffType.htm" />
+  <HelpKINode Title="OppositeDirection enumeration member" Url="html/T_Wsdot_Gtfs_Contract_TripDirectionId.htm" />
+  <HelpKINode Title="origin_id property" Url="html/P_Wsdot_Gtfs_Contract_FareRule_origin_id.htm" />
+  <HelpKINode Title="parent_station property" Url="html/P_Wsdot_Gtfs_Contract_Stop_parent_station.htm" />
+  <HelpKINode Title="ParseGtfsDate method" Url="html/M_Wsdot_Gtfs_IO_Extensions_ParseGtfsDate.htm" />
+  <HelpKINode Title="ParseGtfsNullableDate method" Url="html/M_Wsdot_Gtfs_IO_Extensions_ParseGtfsNullableDate.htm" />
+  <HelpKINode Title="ParseGtfsNullableTimeSpan method" Url="html/M_Wsdot_Gtfs_IO_Extensions_ParseGtfsNullableTimeSpan.htm" />
+  <HelpKINode Title="PaymentMethod enumeration" Url="html/T_Wsdot_Gtfs_Contract_PaymentMethod.htm" />
+  <HelpKINode Title="payment_method property" Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_payment_method.htm" />
+  <HelpKINode Title="PickupOrDropOffType enumeration" Url="html/T_Wsdot_Gtfs_Contract_PickupOrDropOffType.htm" />
+  <HelpKINode Title="pickup_type property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_pickup_type.htm" />
+  <HelpKINode Title="price property" Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_price.htm" />
+  <HelpKINode Title="Rail enumeration member" Url="html/T_Wsdot_Gtfs_Contract_RouteType.htm" />
+  <HelpKINode Title="ReadGtfs method" Url="html/M_Wsdot_Gtfs_IO_GtfsReader_ReadGtfs.htm" />
+  <HelpKINode Title="RecommendedTransferPoint enumeration member" Url="html/T_Wsdot_Gtfs_Contract_TransferType.htm" />
+  <HelpKINode Title="RegularlyScheduled enumeration member" Url="html/T_Wsdot_Gtfs_Contract_PickupOrDropOffType.htm" />
+  <HelpKINode Title="Removed enumeration member" Url="html/T_Wsdot_Gtfs_Contract_ExceptionType.htm" />
+  <HelpKINode Title="RequiredAttribute class">
+    <HelpKINode Title="RequiredAttribute Class" Url="html/T_Wsdot_Gtfs_Contract_RequiredAttribute.htm" />
+    <HelpKINode Title="RequiredAttribute Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_RequiredAttribute.htm" />
+    <HelpKINode Title="about RequiredAttribute class" Url="html/T_Wsdot_Gtfs_Contract_RequiredAttribute.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_RequiredAttribute.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_RequiredAttribute__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_RequiredAttribute.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_RequiredAttribute.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RequiredAttribute.RequiredAttribute constructor" Url="html/M_Wsdot_Gtfs_Contract_RequiredAttribute__ctor.htm" />
+  <HelpKINode Title="Route class">
+    <HelpKINode Title="Route Class" Url="html/T_Wsdot_Gtfs_Contract_Route.htm" />
+    <HelpKINode Title="Route Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Route.htm" />
+    <HelpKINode Title="about Route class" Url="html/T_Wsdot_Gtfs_Contract_Route.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Route.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_Route__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Route.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Route.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Route.agency_id property" Url="html/P_Wsdot_Gtfs_Contract_Route_agency_id.htm" />
+  <HelpKINode Title="Route.Route constructor" Url="html/M_Wsdot_Gtfs_Contract_Route__ctor.htm" />
+  <HelpKINode Title="Route.route_color property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_color.htm" />
+  <HelpKINode Title="Route.route_desc property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_desc.htm" />
+  <HelpKINode Title="Route.route_id property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_id.htm" />
+  <HelpKINode Title="Route.route_long_name property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_long_name.htm" />
+  <HelpKINode Title="Route.route_short_name property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_short_name.htm" />
+  <HelpKINode Title="Route.route_text_color property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_text_color.htm" />
+  <HelpKINode Title="Route.route_type property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_type.htm" />
+  <HelpKINode Title="Route.route_url property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_url.htm" />
+  <HelpKINode Title="RouteMap class">
+    <HelpKINode Title="RouteMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm" />
+    <HelpKINode Title="RouteMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm" />
+    <HelpKINode Title="about RouteMap class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_IO_ClassMap_RouteMap__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RouteMap.CreateMap method" Url="html/M_Wsdot_Gtfs_IO_ClassMap_RouteMap_CreateMap.htm" />
+  <HelpKINode Title="RouteMap.RouteMap constructor" Url="html/M_Wsdot_Gtfs_IO_ClassMap_RouteMap__ctor.htm" />
+  <HelpKINode Title="Routes property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Routes.htm" />
+  <HelpKINode Title="RouteType enumeration" Url="html/T_Wsdot_Gtfs_Contract_RouteType.htm" />
+  <HelpKINode Title="route_color property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_color.htm" />
+  <HelpKINode Title="route_desc property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_desc.htm" />
+  <HelpKINode Title="route_id property">
+    <HelpKINode Title="FareRule.route_id Property " Url="html/P_Wsdot_Gtfs_Contract_FareRule_route_id.htm" />
+    <HelpKINode Title="Route.route_id Property " Url="html/P_Wsdot_Gtfs_Contract_Route_route_id.htm" />
+    <HelpKINode Title="Trip.route_id Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_route_id.htm" />
+  </HelpKINode>
+  <HelpKINode Title="route_long_name property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_long_name.htm" />
+  <HelpKINode Title="route_short_name property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_short_name.htm" />
+  <HelpKINode Title="route_text_color property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_text_color.htm" />
+  <HelpKINode Title="route_type property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_type.htm" />
+  <HelpKINode Title="route_url property" Url="html/P_Wsdot_Gtfs_Contract_Route_route_url.htm" />
+  <HelpKINode Title="saturday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_saturday.htm" />
+  <HelpKINode Title="service_id property">
+    <HelpKINode Title="Calendar.service_id Property " Url="html/P_Wsdot_Gtfs_Contract_Calendar_service_id.htm" />
+    <HelpKINode Title="CalendarDate.service_id Property " Url="html/P_Wsdot_Gtfs_Contract_CalendarDate_service_id.htm" />
+    <HelpKINode Title="Trip.service_id Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_service_id.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Shape class">
+    <HelpKINode Title="Shape Class" Url="html/T_Wsdot_Gtfs_Contract_Shape.htm" />
+    <HelpKINode Title="Shape Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Shape.htm" />
+    <HelpKINode Title="about Shape class" Url="html/T_Wsdot_Gtfs_Contract_Shape.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Shape.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_Shape__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Shape.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Shape.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Shape.Shape constructor" Url="html/M_Wsdot_Gtfs_Contract_Shape__ctor.htm" />
+  <HelpKINode Title="Shape.shape_dist_traveled property" Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_dist_traveled.htm" />
+  <HelpKINode Title="Shape.shape_id property" Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_id.htm" />
+  <HelpKINode Title="Shape.shape_pt_lat property" Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_pt_lat.htm" />
+  <HelpKINode Title="Shape.shape_pt_lon property" Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_pt_lon.htm" />
+  <HelpKINode Title="Shape.shape_pt_sequence property" Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_pt_sequence.htm" />
+  <HelpKINode Title="Shapes property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Shapes.htm" />
+  <HelpKINode Title="shape_dist_traveled property" Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_dist_traveled.htm" />
+  <HelpKINode Title="shape_dist_travelled property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_shape_dist_travelled.htm" />
+  <HelpKINode Title="shape_id property">
+    <HelpKINode Title="Shape.shape_id Property " Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_id.htm" />
+    <HelpKINode Title="Trip.shape_id Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_shape_id.htm" />
+  </HelpKINode>
+  <HelpKINode Title="shape_pt_lat property" Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_pt_lat.htm" />
+  <HelpKINode Title="shape_pt_lon property" Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_pt_lon.htm" />
+  <HelpKINode Title="shape_pt_sequence property" Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_pt_sequence.htm" />
+  <HelpKINode Title="SomeAccessibility enumeration member" Url="html/T_Wsdot_Gtfs_Contract_WheelchairAccessibility.htm" />
+  <HelpKINode Title="start_date property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_start_date.htm" />
+  <HelpKINode Title="start_time property" Url="html/P_Wsdot_Gtfs_Contract_Frequency_start_time.htm" />
+  <HelpKINode Title="Station enumeration member" Url="html/T_Wsdot_Gtfs_Contract_StopLocationType.htm" />
+  <HelpKINode Title="Stop class">
+    <HelpKINode Title="Stop Class" Url="html/T_Wsdot_Gtfs_Contract_Stop.htm" />
+    <HelpKINode Title="Stop Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Stop.htm" />
+    <HelpKINode Title="about Stop class" Url="html/T_Wsdot_Gtfs_Contract_Stop.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Stop.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_Stop__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Stop.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Stop.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Stop enumeration member" Url="html/T_Wsdot_Gtfs_Contract_StopLocationType.htm" />
+  <HelpKINode Title="Stop.location_type property" Url="html/P_Wsdot_Gtfs_Contract_Stop_location_type.htm" />
+  <HelpKINode Title="Stop.parent_station property" Url="html/P_Wsdot_Gtfs_Contract_Stop_parent_station.htm" />
+  <HelpKINode Title="Stop.Stop constructor" Url="html/M_Wsdot_Gtfs_Contract_Stop__ctor.htm" />
+  <HelpKINode Title="Stop.stop_code property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_code.htm" />
+  <HelpKINode Title="Stop.stop_desc property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_desc.htm" />
+  <HelpKINode Title="Stop.stop_id property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_id.htm" />
+  <HelpKINode Title="Stop.stop_lat property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_lat.htm" />
+  <HelpKINode Title="Stop.stop_lon property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_lon.htm" />
+  <HelpKINode Title="Stop.stop_name property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_name.htm" />
+  <HelpKINode Title="Stop.stop_timezone property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_timezone.htm" />
+  <HelpKINode Title="Stop.stop_url property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_url.htm" />
+  <HelpKINode Title="Stop.wheelchair_boarding property" Url="html/P_Wsdot_Gtfs_Contract_Stop_wheelchair_boarding.htm" />
+  <HelpKINode Title="Stop.zone_id property" Url="html/P_Wsdot_Gtfs_Contract_Stop_zone_id.htm" />
+  <HelpKINode Title="StopLocationType enumeration" Url="html/T_Wsdot_Gtfs_Contract_StopLocationType.htm" />
+  <HelpKINode Title="Stops property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Stops.htm" />
+  <HelpKINode Title="StopTime class">
+    <HelpKINode Title="StopTime Class" Url="html/T_Wsdot_Gtfs_Contract_StopTime.htm" />
+    <HelpKINode Title="StopTime Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_StopTime.htm" />
+    <HelpKINode Title="about StopTime class" Url="html/T_Wsdot_Gtfs_Contract_StopTime.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_StopTime.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_StopTime__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_StopTime.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_StopTime.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StopTime.arrival_time property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_arrival_time.htm" />
+  <HelpKINode Title="StopTime.departure_time property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_departure_time.htm" />
+  <HelpKINode Title="StopTime.drop_off_type property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_drop_off_type.htm" />
+  <HelpKINode Title="StopTime.pickup_type property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_pickup_type.htm" />
+  <HelpKINode Title="StopTime.shape_dist_travelled property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_shape_dist_travelled.htm" />
+  <HelpKINode Title="StopTime.StopTime constructor" Url="html/M_Wsdot_Gtfs_Contract_StopTime__ctor.htm" />
+  <HelpKINode Title="StopTime.stop_headsign property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_stop_headsign.htm" />
+  <HelpKINode Title="StopTime.stop_id property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_stop_id.htm" />
+  <HelpKINode Title="StopTime.stop_sequence property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_stop_sequence.htm" />
+  <HelpKINode Title="StopTime.trip_id property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_trip_id.htm" />
+  <HelpKINode Title="StopTimeMap class">
+    <HelpKINode Title="StopTimeMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm" />
+    <HelpKINode Title="StopTimeMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm" />
+    <HelpKINode Title="about StopTimeMap class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_IO_ClassMap_StopTimeMap__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StopTimeMap.CreateMap method" Url="html/M_Wsdot_Gtfs_IO_ClassMap_StopTimeMap_CreateMap.htm" />
+  <HelpKINode Title="StopTimeMap.StopTimeMap constructor" Url="html/M_Wsdot_Gtfs_IO_ClassMap_StopTimeMap__ctor.htm" />
+  <HelpKINode Title="StopTimes property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_StopTimes.htm" />
+  <HelpKINode Title="stop_code property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_code.htm" />
+  <HelpKINode Title="stop_desc property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_desc.htm" />
+  <HelpKINode Title="stop_headsign property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_stop_headsign.htm" />
+  <HelpKINode Title="stop_id property">
+    <HelpKINode Title="Stop.stop_id Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_id.htm" />
+    <HelpKINode Title="StopTime.stop_id Property " Url="html/P_Wsdot_Gtfs_Contract_StopTime_stop_id.htm" />
+  </HelpKINode>
+  <HelpKINode Title="stop_lat property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_lat.htm" />
+  <HelpKINode Title="stop_lon property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_lon.htm" />
+  <HelpKINode Title="stop_name property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_name.htm" />
+  <HelpKINode Title="stop_sequence property" Url="html/P_Wsdot_Gtfs_Contract_StopTime_stop_sequence.htm" />
+  <HelpKINode Title="stop_timezone property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_timezone.htm" />
+  <HelpKINode Title="stop_url property" Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_url.htm" />
+  <HelpKINode Title="SubwayOrMetro enumeration member" Url="html/T_Wsdot_Gtfs_Contract_RouteType.htm" />
+  <HelpKINode Title="sunday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_sunday.htm" />
+  <HelpKINode Title="thursday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_thursday.htm" />
+  <HelpKINode Title="TimedTransferPoint enumeration member" Url="html/T_Wsdot_Gtfs_Contract_TransferType.htm" />
+  <HelpKINode Title="to_stop_id property" Url="html/P_Wsdot_Gtfs_Contract_Transfer_to_stop_id.htm" />
+  <HelpKINode Title="TramStreetcarOrLightRail enumeration member" Url="html/T_Wsdot_Gtfs_Contract_RouteType.htm" />
+  <HelpKINode Title="Transfer class">
+    <HelpKINode Title="Transfer Class" Url="html/T_Wsdot_Gtfs_Contract_Transfer.htm" />
+    <HelpKINode Title="Transfer Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Transfer.htm" />
+    <HelpKINode Title="about Transfer class" Url="html/T_Wsdot_Gtfs_Contract_Transfer.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Transfer.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_Transfer__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Transfer.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Transfer.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Transfer.from_stop_id property" Url="html/P_Wsdot_Gtfs_Contract_Transfer_from_stop_id.htm" />
+  <HelpKINode Title="Transfer.min_transfer_time property" Url="html/P_Wsdot_Gtfs_Contract_Transfer_min_transfer_time.htm" />
+  <HelpKINode Title="Transfer.to_stop_id property" Url="html/P_Wsdot_Gtfs_Contract_Transfer_to_stop_id.htm" />
+  <HelpKINode Title="Transfer.Transfer constructor" Url="html/M_Wsdot_Gtfs_Contract_Transfer__ctor.htm" />
+  <HelpKINode Title="Transfer.transfer_type property" Url="html/P_Wsdot_Gtfs_Contract_Transfer_transfer_type.htm" />
+  <HelpKINode Title="Transfers property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Transfers.htm" />
+  <HelpKINode Title="transfers property" Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_transfers.htm" />
+  <HelpKINode Title="TransferType enumeration" Url="html/T_Wsdot_Gtfs_Contract_TransferType.htm" />
+  <HelpKINode Title="transfer_duration property" Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_transfer_duration.htm" />
+  <HelpKINode Title="transfer_type property" Url="html/P_Wsdot_Gtfs_Contract_Transfer_transfer_type.htm" />
+  <HelpKINode Title="Trip class">
+    <HelpKINode Title="Trip Class" Url="html/T_Wsdot_Gtfs_Contract_Trip.htm" />
+    <HelpKINode Title="Trip Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Trip.htm" />
+    <HelpKINode Title="about Trip class" Url="html/T_Wsdot_Gtfs_Contract_Trip.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Trip.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_Trip__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Trip.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Trip.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Trip.block_id property" Url="html/P_Wsdot_Gtfs_Contract_Trip_block_id.htm" />
+  <HelpKINode Title="Trip.direction_id property" Url="html/P_Wsdot_Gtfs_Contract_Trip_direction_id.htm" />
+  <HelpKINode Title="Trip.route_id property" Url="html/P_Wsdot_Gtfs_Contract_Trip_route_id.htm" />
+  <HelpKINode Title="Trip.service_id property" Url="html/P_Wsdot_Gtfs_Contract_Trip_service_id.htm" />
+  <HelpKINode Title="Trip.shape_id property" Url="html/P_Wsdot_Gtfs_Contract_Trip_shape_id.htm" />
+  <HelpKINode Title="Trip.Trip constructor" Url="html/M_Wsdot_Gtfs_Contract_Trip__ctor.htm" />
+  <HelpKINode Title="Trip.trip_headsign property" Url="html/P_Wsdot_Gtfs_Contract_Trip_trip_headsign.htm" />
+  <HelpKINode Title="Trip.trip_id property" Url="html/P_Wsdot_Gtfs_Contract_Trip_trip_id.htm" />
+  <HelpKINode Title="Trip.trip_shortname property" Url="html/P_Wsdot_Gtfs_Contract_Trip_trip_shortname.htm" />
+  <HelpKINode Title="Trip.wheelchair_accessible property" Url="html/P_Wsdot_Gtfs_Contract_Trip_wheelchair_accessible.htm" />
+  <HelpKINode Title="TripDirectionId enumeration" Url="html/T_Wsdot_Gtfs_Contract_TripDirectionId.htm" />
+  <HelpKINode Title="Trips property" Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Trips.htm" />
+  <HelpKINode Title="trip_headsign property" Url="html/P_Wsdot_Gtfs_Contract_Trip_trip_headsign.htm" />
+  <HelpKINode Title="trip_id property">
+    <HelpKINode Title="Frequency.trip_id Property " Url="html/P_Wsdot_Gtfs_Contract_Frequency_trip_id.htm" />
+    <HelpKINode Title="StopTime.trip_id Property " Url="html/P_Wsdot_Gtfs_Contract_StopTime_trip_id.htm" />
+    <HelpKINode Title="Trip.trip_id Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_trip_id.htm" />
+  </HelpKINode>
+  <HelpKINode Title="trip_shortname property" Url="html/P_Wsdot_Gtfs_Contract_Trip_trip_shortname.htm" />
+  <HelpKINode Title="tuesday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_tuesday.htm" />
+  <HelpKINode Title="UniqueAttribute class">
+    <HelpKINode Title="UniqueAttribute Class" Url="html/T_Wsdot_Gtfs_Contract_UniqueAttribute.htm" />
+    <HelpKINode Title="UniqueAttribute Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_UniqueAttribute.htm" />
+    <HelpKINode Title="about UniqueAttribute class" Url="html/T_Wsdot_Gtfs_Contract_UniqueAttribute.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_UniqueAttribute.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Wsdot_Gtfs_Contract_UniqueAttribute__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_UniqueAttribute.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_UniqueAttribute.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UniqueAttribute.UniqueAttribute constructor" Url="html/M_Wsdot_Gtfs_Contract_UniqueAttribute__ctor.htm" />
+  <HelpKINode Title="wednesday property" Url="html/P_Wsdot_Gtfs_Contract_Calendar_wednesday.htm" />
+  <HelpKINode Title="WheelchairAccessibility enumeration" Url="html/T_Wsdot_Gtfs_Contract_WheelchairAccessibility.htm" />
+  <HelpKINode Title="wheelchair_accessible property" Url="html/P_Wsdot_Gtfs_Contract_Trip_wheelchair_accessible.htm" />
+  <HelpKINode Title="wheelchair_boarding property" Url="html/P_Wsdot_Gtfs_Contract_Stop_wheelchair_boarding.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.Contract namespace" Url="html/N_Wsdot_Gtfs_Contract.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.Contract.Agency class">
+    <HelpKINode Title="Agency Class" Url="html/T_Wsdot_Gtfs_Contract_Agency.htm" />
+    <HelpKINode Title="Agency Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Agency.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.Calendar class">
+    <HelpKINode Title="Calendar Class" Url="html/T_Wsdot_Gtfs_Contract_Calendar.htm" />
+    <HelpKINode Title="Calendar Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Calendar.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.CalendarDate class">
+    <HelpKINode Title="CalendarDate Class" Url="html/T_Wsdot_Gtfs_Contract_CalendarDate.htm" />
+    <HelpKINode Title="CalendarDate Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_CalendarDate.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.ExceptionType enumeration" Url="html/T_Wsdot_Gtfs_Contract_ExceptionType.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.Contract.FareAttribute class">
+    <HelpKINode Title="FareAttribute Class" Url="html/T_Wsdot_Gtfs_Contract_FareAttribute.htm" />
+    <HelpKINode Title="FareAttribute Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FareAttribute.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.FareRule class">
+    <HelpKINode Title="FareRule Class" Url="html/T_Wsdot_Gtfs_Contract_FareRule.htm" />
+    <HelpKINode Title="FareRule Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FareRule.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.FeedInfo class">
+    <HelpKINode Title="FeedInfo Class" Url="html/T_Wsdot_Gtfs_Contract_FeedInfo.htm" />
+    <HelpKINode Title="FeedInfo Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FeedInfo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.Frequency class">
+    <HelpKINode Title="Frequency Class" Url="html/T_Wsdot_Gtfs_Contract_Frequency.htm" />
+    <HelpKINode Title="Frequency Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Frequency.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.GtfsFeed class">
+    <HelpKINode Title="GtfsFeed Class" Url="html/T_Wsdot_Gtfs_Contract_GtfsFeed.htm" />
+    <HelpKINode Title="GtfsFeed Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_GtfsFeed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.PaymentMethod enumeration" Url="html/T_Wsdot_Gtfs_Contract_PaymentMethod.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.Contract.PickupOrDropOffType enumeration" Url="html/T_Wsdot_Gtfs_Contract_PickupOrDropOffType.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.Contract.RequiredAttribute class">
+    <HelpKINode Title="RequiredAttribute Class" Url="html/T_Wsdot_Gtfs_Contract_RequiredAttribute.htm" />
+    <HelpKINode Title="RequiredAttribute Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_RequiredAttribute.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.Route class">
+    <HelpKINode Title="Route Class" Url="html/T_Wsdot_Gtfs_Contract_Route.htm" />
+    <HelpKINode Title="Route Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Route.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.RouteType enumeration" Url="html/T_Wsdot_Gtfs_Contract_RouteType.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.Contract.Shape class">
+    <HelpKINode Title="Shape Class" Url="html/T_Wsdot_Gtfs_Contract_Shape.htm" />
+    <HelpKINode Title="Shape Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Shape.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.Stop class">
+    <HelpKINode Title="Stop Class" Url="html/T_Wsdot_Gtfs_Contract_Stop.htm" />
+    <HelpKINode Title="Stop Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Stop.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.StopLocationType enumeration" Url="html/T_Wsdot_Gtfs_Contract_StopLocationType.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.Contract.StopTime class">
+    <HelpKINode Title="StopTime Class" Url="html/T_Wsdot_Gtfs_Contract_StopTime.htm" />
+    <HelpKINode Title="StopTime Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_StopTime.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.Transfer class">
+    <HelpKINode Title="Transfer Class" Url="html/T_Wsdot_Gtfs_Contract_Transfer.htm" />
+    <HelpKINode Title="Transfer Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Transfer.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.TransferType enumeration" Url="html/T_Wsdot_Gtfs_Contract_TransferType.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.Contract.Trip class">
+    <HelpKINode Title="Trip Class" Url="html/T_Wsdot_Gtfs_Contract_Trip.htm" />
+    <HelpKINode Title="Trip Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Trip.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.TripDirectionId enumeration" Url="html/T_Wsdot_Gtfs_Contract_TripDirectionId.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.Contract.UniqueAttribute class">
+    <HelpKINode Title="UniqueAttribute Class" Url="html/T_Wsdot_Gtfs_Contract_UniqueAttribute.htm" />
+    <HelpKINode Title="UniqueAttribute Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_UniqueAttribute.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.Contract.WheelchairAccessibility enumeration" Url="html/T_Wsdot_Gtfs_Contract_WheelchairAccessibility.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.IO namespace" Url="html/N_Wsdot_Gtfs_IO.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.IO.ClassMap namespace" Url="html/N_Wsdot_Gtfs_IO_ClassMap.htm" />
+  <HelpKINode Title="Wsdot.Gtfs.IO.ClassMap.CalendarDateMap class">
+    <HelpKINode Title="CalendarDateMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm" />
+    <HelpKINode Title="CalendarDateMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.IO.ClassMap.CalendarMap class">
+    <HelpKINode Title="CalendarMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm" />
+    <HelpKINode Title="CalendarMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.IO.ClassMap.FeedInfoMap class">
+    <HelpKINode Title="FeedInfoMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm" />
+    <HelpKINode Title="FeedInfoMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.IO.ClassMap.RouteMap class">
+    <HelpKINode Title="RouteMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm" />
+    <HelpKINode Title="RouteMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.IO.ClassMap.StopTimeMap class">
+    <HelpKINode Title="StopTimeMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm" />
+    <HelpKINode Title="StopTimeMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.IO.Extensions class">
+    <HelpKINode Title="Extensions Class" Url="html/T_Wsdot_Gtfs_IO_Extensions.htm" />
+    <HelpKINode Title="Extensions Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_Extensions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wsdot.Gtfs.IO.GtfsReader class">
+    <HelpKINode Title="GtfsReader Class" Url="html/T_Wsdot_Gtfs_IO_GtfsReader.htm" />
+    <HelpKINode Title="GtfsReader Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_GtfsReader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="zone_id property" Url="html/P_Wsdot_Gtfs_Contract_Stop_zone_id.htm" />
+</HelpKI>

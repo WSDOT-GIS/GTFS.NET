@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="d1e687fb-7b30-43ae-a918-5a979e9bd768" Title="Wsdot.Gtfs.Contract Namespace" Url="html/N_Wsdot_Gtfs_Contract.htm">
+    <HelpTOCNode Id="5c90a050-45de-4eb7-b2de-5636f1641486" Title="Agency Class" Url="html/T_Wsdot_Gtfs_Contract_Agency.htm">
+      <HelpTOCNode Title="Agency Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Agency.htm" />
+      <HelpTOCNode Title="Agency Constructor " Url="html/M_Wsdot_Gtfs_Contract_Agency__ctor.htm" />
+      <HelpTOCNode Title="Agency Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Agency.htm" />
+      <HelpTOCNode Id="48223bd2-2da6-409b-8225-4e304d7f3e48" Title="Agency Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Agency.htm">
+        <HelpTOCNode Title="agency_fare_url Property " Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_fare_url.htm" />
+        <HelpTOCNode Title="agency_id Property " Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_id.htm" />
+        <HelpTOCNode Title="agency_lang Property " Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_lang.htm" />
+        <HelpTOCNode Title="agency_name Property " Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_name.htm" />
+        <HelpTOCNode Title="agency_phone Property " Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_phone.htm" />
+        <HelpTOCNode Title="agency_timezone Property " Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_timezone.htm" />
+        <HelpTOCNode Title="agency_url Property " Url="html/P_Wsdot_Gtfs_Contract_Agency_agency_url.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="67c989c2-4cc9-4d36-9dee-31bb0c6808fc" Title="Calendar Class" Url="html/T_Wsdot_Gtfs_Contract_Calendar.htm">
+      <HelpTOCNode Title="Calendar Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Calendar.htm" />
+      <HelpTOCNode Title="Calendar Constructor " Url="html/M_Wsdot_Gtfs_Contract_Calendar__ctor.htm" />
+      <HelpTOCNode Title="Calendar Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Calendar.htm" />
+      <HelpTOCNode Id="d6503e76-997e-407d-a2e2-6537a1b6d86d" Title="Calendar Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Calendar.htm">
+        <HelpTOCNode Title="end_date Property " Url="html/P_Wsdot_Gtfs_Contract_Calendar_end_date.htm" />
+        <HelpTOCNode Title="friday Property " Url="html/P_Wsdot_Gtfs_Contract_Calendar_friday.htm" />
+        <HelpTOCNode Title="monday Property " Url="html/P_Wsdot_Gtfs_Contract_Calendar_monday.htm" />
+        <HelpTOCNode Title="saturday Property " Url="html/P_Wsdot_Gtfs_Contract_Calendar_saturday.htm" />
+        <HelpTOCNode Title="service_id Property " Url="html/P_Wsdot_Gtfs_Contract_Calendar_service_id.htm" />
+        <HelpTOCNode Title="start_date Property " Url="html/P_Wsdot_Gtfs_Contract_Calendar_start_date.htm" />
+        <HelpTOCNode Title="sunday Property " Url="html/P_Wsdot_Gtfs_Contract_Calendar_sunday.htm" />
+        <HelpTOCNode Title="thursday Property " Url="html/P_Wsdot_Gtfs_Contract_Calendar_thursday.htm" />
+        <HelpTOCNode Title="tuesday Property " Url="html/P_Wsdot_Gtfs_Contract_Calendar_tuesday.htm" />
+        <HelpTOCNode Title="wednesday Property " Url="html/P_Wsdot_Gtfs_Contract_Calendar_wednesday.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="73d3f3ed-ac79-4e2e-9c04-2470d0a6daa8" Title="CalendarDate Class" Url="html/T_Wsdot_Gtfs_Contract_CalendarDate.htm">
+      <HelpTOCNode Title="CalendarDate Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_CalendarDate.htm" />
+      <HelpTOCNode Title="CalendarDate Constructor " Url="html/M_Wsdot_Gtfs_Contract_CalendarDate__ctor.htm" />
+      <HelpTOCNode Title="CalendarDate Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_CalendarDate.htm" />
+      <HelpTOCNode Id="5981f80f-d2b0-4ac5-b771-c5a93810513a" Title="CalendarDate Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_CalendarDate.htm">
+        <HelpTOCNode Title="date Property " Url="html/P_Wsdot_Gtfs_Contract_CalendarDate_date.htm" />
+        <HelpTOCNode Title="exception_type Property " Url="html/P_Wsdot_Gtfs_Contract_CalendarDate_exception_type.htm" />
+        <HelpTOCNode Title="service_id Property " Url="html/P_Wsdot_Gtfs_Contract_CalendarDate_service_id.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="ExceptionType Enumeration" Url="html/T_Wsdot_Gtfs_Contract_ExceptionType.htm" />
+    <HelpTOCNode Id="e3d5b461-3f08-4d9a-8d61-1b2565c74a3a" Title="FareAttribute Class" Url="html/T_Wsdot_Gtfs_Contract_FareAttribute.htm">
+      <HelpTOCNode Title="FareAttribute Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FareAttribute.htm" />
+      <HelpTOCNode Title="FareAttribute Constructor " Url="html/M_Wsdot_Gtfs_Contract_FareAttribute__ctor.htm" />
+      <HelpTOCNode Title="FareAttribute Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_FareAttribute.htm" />
+      <HelpTOCNode Id="70384a50-5588-4fd4-90f7-ae9c7709b0ad" Title="FareAttribute Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_FareAttribute.htm">
+        <HelpTOCNode Title="currency_type Property " Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_currency_type.htm" />
+        <HelpTOCNode Title="fare_id Property " Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_fare_id.htm" />
+        <HelpTOCNode Title="payment_method Property " Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_payment_method.htm" />
+        <HelpTOCNode Title="price Property " Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_price.htm" />
+        <HelpTOCNode Title="transfer_duration Property " Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_transfer_duration.htm" />
+        <HelpTOCNode Title="transfers Property " Url="html/P_Wsdot_Gtfs_Contract_FareAttribute_transfers.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ae01623e-d87e-470f-ae5c-ca49fc81b03e" Title="FareRule Class" Url="html/T_Wsdot_Gtfs_Contract_FareRule.htm">
+      <HelpTOCNode Title="FareRule Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FareRule.htm" />
+      <HelpTOCNode Title="FareRule Constructor " Url="html/M_Wsdot_Gtfs_Contract_FareRule__ctor.htm" />
+      <HelpTOCNode Title="FareRule Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_FareRule.htm" />
+      <HelpTOCNode Id="56a6759e-6202-49b4-a52d-809bcf795c6e" Title="FareRule Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_FareRule.htm">
+        <HelpTOCNode Title="contains_id Property " Url="html/P_Wsdot_Gtfs_Contract_FareRule_contains_id.htm" />
+        <HelpTOCNode Title="destination_id Property " Url="html/P_Wsdot_Gtfs_Contract_FareRule_destination_id.htm" />
+        <HelpTOCNode Title="fare_id Property " Url="html/P_Wsdot_Gtfs_Contract_FareRule_fare_id.htm" />
+        <HelpTOCNode Title="origin_id Property " Url="html/P_Wsdot_Gtfs_Contract_FareRule_origin_id.htm" />
+        <HelpTOCNode Title="route_id Property " Url="html/P_Wsdot_Gtfs_Contract_FareRule_route_id.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f7bbdc84-c917-470d-bbfc-4b76961a1849" Title="FeedInfo Class" Url="html/T_Wsdot_Gtfs_Contract_FeedInfo.htm">
+      <HelpTOCNode Title="FeedInfo Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_FeedInfo.htm" />
+      <HelpTOCNode Title="FeedInfo Constructor " Url="html/M_Wsdot_Gtfs_Contract_FeedInfo__ctor.htm" />
+      <HelpTOCNode Title="FeedInfo Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_FeedInfo.htm" />
+      <HelpTOCNode Id="320bc04f-51b4-4c40-b9a8-abc64382999d" Title="FeedInfo Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_FeedInfo.htm">
+        <HelpTOCNode Title="feed_end_date Property " Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_end_date.htm" />
+        <HelpTOCNode Title="feed_lang Property " Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_lang.htm" />
+        <HelpTOCNode Title="feed_publisher_name Property " Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_publisher_name.htm" />
+        <HelpTOCNode Title="feed_publisher_url Property " Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_publisher_url.htm" />
+        <HelpTOCNode Title="feed_start_date Property " Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_start_date.htm" />
+        <HelpTOCNode Title="feed_version Property " Url="html/P_Wsdot_Gtfs_Contract_FeedInfo_feed_version.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f1dc48c0-eff6-4f38-900d-f8a35fa459b9" Title="Frequency Class" Url="html/T_Wsdot_Gtfs_Contract_Frequency.htm">
+      <HelpTOCNode Title="Frequency Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Frequency.htm" />
+      <HelpTOCNode Title="Frequency Constructor " Url="html/M_Wsdot_Gtfs_Contract_Frequency__ctor.htm" />
+      <HelpTOCNode Title="Frequency Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Frequency.htm" />
+      <HelpTOCNode Id="8be1e9dd-4156-43bb-a447-6cea80932318" Title="Frequency Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Frequency.htm">
+        <HelpTOCNode Title="end_time Property " Url="html/P_Wsdot_Gtfs_Contract_Frequency_end_time.htm" />
+        <HelpTOCNode Title="exact_times Property " Url="html/P_Wsdot_Gtfs_Contract_Frequency_exact_times.htm" />
+        <HelpTOCNode Title="headway_secs Property " Url="html/P_Wsdot_Gtfs_Contract_Frequency_headway_secs.htm" />
+        <HelpTOCNode Title="start_time Property " Url="html/P_Wsdot_Gtfs_Contract_Frequency_start_time.htm" />
+        <HelpTOCNode Title="trip_id Property " Url="html/P_Wsdot_Gtfs_Contract_Frequency_trip_id.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f0f0ab9b-8e53-4fcb-b9bb-af2b17da7fb5" Title="GtfsFeed Class" Url="html/T_Wsdot_Gtfs_Contract_GtfsFeed.htm">
+      <HelpTOCNode Title="GtfsFeed Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_GtfsFeed.htm" />
+      <HelpTOCNode Title="GtfsFeed Constructor " Url="html/M_Wsdot_Gtfs_Contract_GtfsFeed__ctor.htm" />
+      <HelpTOCNode Title="GtfsFeed Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_GtfsFeed.htm" />
+      <HelpTOCNode Id="1b17bcc8-569e-429f-b22e-e64008951c19" Title="GtfsFeed Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_GtfsFeed.htm">
+        <HelpTOCNode Title="Agency Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Agency.htm" />
+        <HelpTOCNode Title="Calendar Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Calendar.htm" />
+        <HelpTOCNode Title="CalendarDates Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_CalendarDates.htm" />
+        <HelpTOCNode Title="FareAttributes Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_FareAttributes.htm" />
+        <HelpTOCNode Title="FareRules Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_FareRules.htm" />
+        <HelpTOCNode Title="FeedInfo Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_FeedInfo.htm" />
+        <HelpTOCNode Title="Frequencies Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Frequencies.htm" />
+        <HelpTOCNode Title="Routes Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Routes.htm" />
+        <HelpTOCNode Title="Shapes Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Shapes.htm" />
+        <HelpTOCNode Title="Stops Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Stops.htm" />
+        <HelpTOCNode Title="StopTimes Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_StopTimes.htm" />
+        <HelpTOCNode Title="Transfers Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Transfers.htm" />
+        <HelpTOCNode Title="Trips Property " Url="html/P_Wsdot_Gtfs_Contract_GtfsFeed_Trips.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="PaymentMethod Enumeration" Url="html/T_Wsdot_Gtfs_Contract_PaymentMethod.htm" />
+    <HelpTOCNode Title="PickupOrDropOffType Enumeration" Url="html/T_Wsdot_Gtfs_Contract_PickupOrDropOffType.htm" />
+    <HelpTOCNode Id="351af2ae-03e3-4da6-aa41-b6b3e1780172" Title="RequiredAttribute Class" Url="html/T_Wsdot_Gtfs_Contract_RequiredAttribute.htm">
+      <HelpTOCNode Title="RequiredAttribute Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_RequiredAttribute.htm" />
+      <HelpTOCNode Title="RequiredAttribute Constructor " Url="html/M_Wsdot_Gtfs_Contract_RequiredAttribute__ctor.htm" />
+      <HelpTOCNode Title="RequiredAttribute Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_RequiredAttribute.htm" />
+      <HelpTOCNode Title="RequiredAttribute Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_RequiredAttribute.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="079e0699-529a-4280-8f0e-740d5381dd66" Title="Route Class" Url="html/T_Wsdot_Gtfs_Contract_Route.htm">
+      <HelpTOCNode Title="Route Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Route.htm" />
+      <HelpTOCNode Title="Route Constructor " Url="html/M_Wsdot_Gtfs_Contract_Route__ctor.htm" />
+      <HelpTOCNode Title="Route Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Route.htm" />
+      <HelpTOCNode Id="510b0174-75e3-4bac-b047-e364716c7906" Title="Route Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Route.htm">
+        <HelpTOCNode Title="agency_id Property " Url="html/P_Wsdot_Gtfs_Contract_Route_agency_id.htm" />
+        <HelpTOCNode Title="route_color Property " Url="html/P_Wsdot_Gtfs_Contract_Route_route_color.htm" />
+        <HelpTOCNode Title="route_desc Property " Url="html/P_Wsdot_Gtfs_Contract_Route_route_desc.htm" />
+        <HelpTOCNode Title="route_id Property " Url="html/P_Wsdot_Gtfs_Contract_Route_route_id.htm" />
+        <HelpTOCNode Title="route_long_name Property " Url="html/P_Wsdot_Gtfs_Contract_Route_route_long_name.htm" />
+        <HelpTOCNode Title="route_short_name Property " Url="html/P_Wsdot_Gtfs_Contract_Route_route_short_name.htm" />
+        <HelpTOCNode Title="route_text_color Property " Url="html/P_Wsdot_Gtfs_Contract_Route_route_text_color.htm" />
+        <HelpTOCNode Title="route_type Property " Url="html/P_Wsdot_Gtfs_Contract_Route_route_type.htm" />
+        <HelpTOCNode Title="route_url Property " Url="html/P_Wsdot_Gtfs_Contract_Route_route_url.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="RouteType Enumeration" Url="html/T_Wsdot_Gtfs_Contract_RouteType.htm" />
+    <HelpTOCNode Id="cde5d581-709c-4eb4-97ef-03d63661f5fe" Title="Shape Class" Url="html/T_Wsdot_Gtfs_Contract_Shape.htm">
+      <HelpTOCNode Title="Shape Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Shape.htm" />
+      <HelpTOCNode Title="Shape Constructor " Url="html/M_Wsdot_Gtfs_Contract_Shape__ctor.htm" />
+      <HelpTOCNode Title="Shape Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Shape.htm" />
+      <HelpTOCNode Id="3b648b5c-adda-49bc-957a-7cc7d66349df" Title="Shape Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Shape.htm">
+        <HelpTOCNode Title="shape_dist_traveled Property " Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_dist_traveled.htm" />
+        <HelpTOCNode Title="shape_id Property " Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_id.htm" />
+        <HelpTOCNode Title="shape_pt_lat Property " Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_pt_lat.htm" />
+        <HelpTOCNode Title="shape_pt_lon Property " Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_pt_lon.htm" />
+        <HelpTOCNode Title="shape_pt_sequence Property " Url="html/P_Wsdot_Gtfs_Contract_Shape_shape_pt_sequence.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f88447f6-9bc6-4a70-9798-33a91b91c554" Title="Stop Class" Url="html/T_Wsdot_Gtfs_Contract_Stop.htm">
+      <HelpTOCNode Title="Stop Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Stop.htm" />
+      <HelpTOCNode Title="Stop Constructor " Url="html/M_Wsdot_Gtfs_Contract_Stop__ctor.htm" />
+      <HelpTOCNode Title="Stop Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Stop.htm" />
+      <HelpTOCNode Id="02f96893-b92c-4c66-81b2-d5a3a6fbcfe2" Title="Stop Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Stop.htm">
+        <HelpTOCNode Title="location_type Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_location_type.htm" />
+        <HelpTOCNode Title="parent_station Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_parent_station.htm" />
+        <HelpTOCNode Title="stop_code Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_code.htm" />
+        <HelpTOCNode Title="stop_desc Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_desc.htm" />
+        <HelpTOCNode Title="stop_id Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_id.htm" />
+        <HelpTOCNode Title="stop_lat Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_lat.htm" />
+        <HelpTOCNode Title="stop_lon Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_lon.htm" />
+        <HelpTOCNode Title="stop_name Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_name.htm" />
+        <HelpTOCNode Title="stop_timezone Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_timezone.htm" />
+        <HelpTOCNode Title="stop_url Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_stop_url.htm" />
+        <HelpTOCNode Title="wheelchair_boarding Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_wheelchair_boarding.htm" />
+        <HelpTOCNode Title="zone_id Property " Url="html/P_Wsdot_Gtfs_Contract_Stop_zone_id.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="StopLocationType Enumeration" Url="html/T_Wsdot_Gtfs_Contract_StopLocationType.htm" />
+    <HelpTOCNode Id="37bd2403-ec15-4b6d-a263-11a2d10583fc" Title="StopTime Class" Url="html/T_Wsdot_Gtfs_Contract_StopTime.htm">
+      <HelpTOCNode Title="StopTime Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_StopTime.htm" />
+      <HelpTOCNode Title="StopTime Constructor " Url="html/M_Wsdot_Gtfs_Contract_StopTime__ctor.htm" />
+      <HelpTOCNode Title="StopTime Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_StopTime.htm" />
+      <HelpTOCNode Id="db54d58f-b5cc-435c-a3c1-dc6896bad22b" Title="StopTime Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_StopTime.htm">
+        <HelpTOCNode Title="arrival_time Property " Url="html/P_Wsdot_Gtfs_Contract_StopTime_arrival_time.htm" />
+        <HelpTOCNode Title="departure_time Property " Url="html/P_Wsdot_Gtfs_Contract_StopTime_departure_time.htm" />
+        <HelpTOCNode Title="drop_off_type Property " Url="html/P_Wsdot_Gtfs_Contract_StopTime_drop_off_type.htm" />
+        <HelpTOCNode Title="pickup_type Property " Url="html/P_Wsdot_Gtfs_Contract_StopTime_pickup_type.htm" />
+        <HelpTOCNode Title="shape_dist_travelled Property " Url="html/P_Wsdot_Gtfs_Contract_StopTime_shape_dist_travelled.htm" />
+        <HelpTOCNode Title="stop_headsign Property " Url="html/P_Wsdot_Gtfs_Contract_StopTime_stop_headsign.htm" />
+        <HelpTOCNode Title="stop_id Property " Url="html/P_Wsdot_Gtfs_Contract_StopTime_stop_id.htm" />
+        <HelpTOCNode Title="stop_sequence Property " Url="html/P_Wsdot_Gtfs_Contract_StopTime_stop_sequence.htm" />
+        <HelpTOCNode Title="trip_id Property " Url="html/P_Wsdot_Gtfs_Contract_StopTime_trip_id.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="534c77f0-62fc-4a17-8950-48a16068cf88" Title="Transfer Class" Url="html/T_Wsdot_Gtfs_Contract_Transfer.htm">
+      <HelpTOCNode Title="Transfer Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Transfer.htm" />
+      <HelpTOCNode Title="Transfer Constructor " Url="html/M_Wsdot_Gtfs_Contract_Transfer__ctor.htm" />
+      <HelpTOCNode Title="Transfer Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Transfer.htm" />
+      <HelpTOCNode Id="34dc1777-0622-4de5-acb7-9223de270a92" Title="Transfer Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Transfer.htm">
+        <HelpTOCNode Title="from_stop_id Property " Url="html/P_Wsdot_Gtfs_Contract_Transfer_from_stop_id.htm" />
+        <HelpTOCNode Title="min_transfer_time Property " Url="html/P_Wsdot_Gtfs_Contract_Transfer_min_transfer_time.htm" />
+        <HelpTOCNode Title="to_stop_id Property " Url="html/P_Wsdot_Gtfs_Contract_Transfer_to_stop_id.htm" />
+        <HelpTOCNode Title="transfer_type Property " Url="html/P_Wsdot_Gtfs_Contract_Transfer_transfer_type.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="TransferType Enumeration" Url="html/T_Wsdot_Gtfs_Contract_TransferType.htm" />
+    <HelpTOCNode Id="8bd98afb-0a8b-44aa-8b29-3c3041fb581a" Title="Trip Class" Url="html/T_Wsdot_Gtfs_Contract_Trip.htm">
+      <HelpTOCNode Title="Trip Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_Trip.htm" />
+      <HelpTOCNode Title="Trip Constructor " Url="html/M_Wsdot_Gtfs_Contract_Trip__ctor.htm" />
+      <HelpTOCNode Title="Trip Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_Trip.htm" />
+      <HelpTOCNode Id="14f3fc07-3738-404d-b9d7-4998d8a8720c" Title="Trip Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_Trip.htm">
+        <HelpTOCNode Title="block_id Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_block_id.htm" />
+        <HelpTOCNode Title="direction_id Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_direction_id.htm" />
+        <HelpTOCNode Title="route_id Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_route_id.htm" />
+        <HelpTOCNode Title="service_id Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_service_id.htm" />
+        <HelpTOCNode Title="shape_id Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_shape_id.htm" />
+        <HelpTOCNode Title="trip_headsign Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_trip_headsign.htm" />
+        <HelpTOCNode Title="trip_id Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_trip_id.htm" />
+        <HelpTOCNode Title="trip_shortname Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_trip_shortname.htm" />
+        <HelpTOCNode Title="wheelchair_accessible Property " Url="html/P_Wsdot_Gtfs_Contract_Trip_wheelchair_accessible.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="TripDirectionId Enumeration" Url="html/T_Wsdot_Gtfs_Contract_TripDirectionId.htm" />
+    <HelpTOCNode Id="509d8a06-2c9b-4abb-82cc-8779d651af6f" Title="UniqueAttribute Class" Url="html/T_Wsdot_Gtfs_Contract_UniqueAttribute.htm">
+      <HelpTOCNode Title="UniqueAttribute Members" Url="html/AllMembers_T_Wsdot_Gtfs_Contract_UniqueAttribute.htm" />
+      <HelpTOCNode Title="UniqueAttribute Constructor " Url="html/M_Wsdot_Gtfs_Contract_UniqueAttribute__ctor.htm" />
+      <HelpTOCNode Title="UniqueAttribute Methods" Url="html/Methods_T_Wsdot_Gtfs_Contract_UniqueAttribute.htm" />
+      <HelpTOCNode Title="UniqueAttribute Properties" Url="html/Properties_T_Wsdot_Gtfs_Contract_UniqueAttribute.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="WheelchairAccessibility Enumeration" Url="html/T_Wsdot_Gtfs_Contract_WheelchairAccessibility.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="4d08c481-8fc9-4e7e-a1b6-7ec30ac73a1e" Title="Wsdot.Gtfs.IO Namespace" Url="html/N_Wsdot_Gtfs_IO.htm">
+    <HelpTOCNode Id="5742e875-b24d-48e5-bd59-c0440969515d" Title="Extensions Class" Url="html/T_Wsdot_Gtfs_IO_Extensions.htm">
+      <HelpTOCNode Title="Extensions Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_Extensions.htm" />
+      <HelpTOCNode Id="409a40e0-8330-43e6-8bc8-7b235018718f" Title="Extensions Methods" Url="html/Methods_T_Wsdot_Gtfs_IO_Extensions.htm">
+        <HelpTOCNode Title="ParseGtfsDate Method " Url="html/M_Wsdot_Gtfs_IO_Extensions_ParseGtfsDate.htm" />
+        <HelpTOCNode Title="ParseGtfsNullableDate Method " Url="html/M_Wsdot_Gtfs_IO_Extensions_ParseGtfsNullableDate.htm" />
+        <HelpTOCNode Title="ParseGtfsNullableTimeSpan Method " Url="html/M_Wsdot_Gtfs_IO_Extensions_ParseGtfsNullableTimeSpan.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="39a39752-3e06-452d-b4d1-ab2fc3033e7e" Title="GtfsReader Class" Url="html/T_Wsdot_Gtfs_IO_GtfsReader.htm">
+      <HelpTOCNode Title="GtfsReader Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_GtfsReader.htm" />
+      <HelpTOCNode Id="01ff8702-5e3a-4152-a46e-21c0eed16944" Title="GtfsReader Methods" Url="html/Methods_T_Wsdot_Gtfs_IO_GtfsReader.htm">
+        <HelpTOCNode Title="ReadGtfs Method " Url="html/M_Wsdot_Gtfs_IO_GtfsReader_ReadGtfs.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d8189b4f-d339-4de5-9de5-b60dcc01be08" Title="Wsdot.Gtfs.IO.ClassMap Namespace" Url="html/N_Wsdot_Gtfs_IO_ClassMap.htm">
+    <HelpTOCNode Id="cb7f3953-452e-4655-b394-b013b632e0f3" Title="CalendarDateMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm">
+      <HelpTOCNode Title="CalendarDateMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm" />
+      <HelpTOCNode Title="CalendarDateMap Constructor " Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap__ctor.htm" />
+      <HelpTOCNode Id="6eebf9a4-2147-44c2-856f-6b1eb822491e" Title="CalendarDateMap Methods" Url="html/Methods_T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm">
+        <HelpTOCNode Title="CreateMap Method " Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap_CreateMap.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CalendarDateMap Properties" Url="html/Properties_T_Wsdot_Gtfs_IO_ClassMap_CalendarDateMap.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="ec8f4a23-d6f3-4705-b0a9-47d4f79500e6" Title="CalendarMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm">
+      <HelpTOCNode Title="CalendarMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm" />
+      <HelpTOCNode Title="CalendarMap Constructor " Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarMap__ctor.htm" />
+      <HelpTOCNode Id="ba6c3ecf-5391-491a-aaa0-85f682f00fb0" Title="CalendarMap Methods" Url="html/Methods_T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm">
+        <HelpTOCNode Title="CreateMap Method " Url="html/M_Wsdot_Gtfs_IO_ClassMap_CalendarMap_CreateMap.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CalendarMap Properties" Url="html/Properties_T_Wsdot_Gtfs_IO_ClassMap_CalendarMap.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1225b83c-756c-4e8c-b4d5-17ecaa4b7ce1" Title="FeedInfoMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm">
+      <HelpTOCNode Title="FeedInfoMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm" />
+      <HelpTOCNode Title="FeedInfoMap Constructor " Url="html/M_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap__ctor.htm" />
+      <HelpTOCNode Id="eea74967-7241-42cf-af7b-db632c03dcd7" Title="FeedInfoMap Methods" Url="html/Methods_T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm">
+        <HelpTOCNode Title="CreateMap Method " Url="html/M_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap_CreateMap.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FeedInfoMap Properties" Url="html/Properties_T_Wsdot_Gtfs_IO_ClassMap_FeedInfoMap.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="64669ce8-8ae5-41ef-bad1-0754fa49648b" Title="RouteMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm">
+      <HelpTOCNode Title="RouteMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm" />
+      <HelpTOCNode Title="RouteMap Constructor " Url="html/M_Wsdot_Gtfs_IO_ClassMap_RouteMap__ctor.htm" />
+      <HelpTOCNode Id="ff43638d-f462-4e85-9af4-ea8cd2e049a5" Title="RouteMap Methods" Url="html/Methods_T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm">
+        <HelpTOCNode Title="CreateMap Method " Url="html/M_Wsdot_Gtfs_IO_ClassMap_RouteMap_CreateMap.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="RouteMap Properties" Url="html/Properties_T_Wsdot_Gtfs_IO_ClassMap_RouteMap.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="323b0450-cd18-4781-afa6-6342de0b6eca" Title="StopTimeMap Class" Url="html/T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm">
+      <HelpTOCNode Title="StopTimeMap Members" Url="html/AllMembers_T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm" />
+      <HelpTOCNode Title="StopTimeMap Constructor " Url="html/M_Wsdot_Gtfs_IO_ClassMap_StopTimeMap__ctor.htm" />
+      <HelpTOCNode Id="69730c52-70b1-41b5-a868-919f03a7605c" Title="StopTimeMap Methods" Url="html/Methods_T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm">
+        <HelpTOCNode Title="CreateMap Method " Url="html/M_Wsdot_Gtfs_IO_ClassMap_StopTimeMap_CreateMap.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="StopTimeMap Properties" Url="html/Properties_T_Wsdot_Gtfs_IO_ClassMap_StopTimeMap.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
