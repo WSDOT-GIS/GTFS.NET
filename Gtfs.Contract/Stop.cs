@@ -98,7 +98,7 @@ namespace Wsdot.Gtfs.Contract
 		/// <para>The stop_timezone field contains the timezone in which this stop or station is located. 
 		/// Please refer to <see href="http://en.wikipedia.org/wiki/List_of_tz_zones">Wikipedia List of Timezones</see> 
 		/// for a list of valid values. 
-		/// If omitted, the stop should be assumed to be located in the timezone specified by <see cref="Agendy.agency_timezone"/>.
+		/// If omitted, the stop should be assumed to be located in the timezone specified by <see cref="Agency.agency_timezone"/>.
 		/// </para>
 		/// <para>When a stop has a parent station, the stop is considered to be in the timezone specified by the parent station's 
 		/// stop_timezone value. If the parent has no stop_timezone value, the stops that belong to that station are assumed to 

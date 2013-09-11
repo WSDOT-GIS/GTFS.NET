@@ -99,7 +99,7 @@ namespace Wsdot.Gtfs.IO
 		/// Reads a GTFS zip archive stream and converts it into a <see cref="GtfsFeed"/>.
 		/// </summary>
 		/// <param name="stream">A zip archive <see cref="Stream"/> containing General Transit Feet Specification data.</param>
-		/// <returns></returns>
+		/// <returns>A <see cref="GtfsFeed"/> representation of the contents of <paramref name="stream"/>.</returns>
 		public static GtfsFeed ReadGtfs(this Stream stream)
 		{
 			var zip = new System.IO.Compression.ZipArchive(stream, ZipArchiveMode.Read, false);
