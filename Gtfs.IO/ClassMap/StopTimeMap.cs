@@ -3,8 +3,12 @@ using Wsdot.Gtfs.Contract;
 
 namespace Wsdot.Gtfs.IO.ClassMap
 {
+	/// <summary>
+	/// Provides CSV mapping for <see cref="StopTime"/>.
+	/// </summary>
 	public class StopTimeMap: CsvClassMap<StopTime>
 	{
+		/// <summary>Create CSV map.</summary>
 		public override void CreateMap()
 		{
 			Map(m => m.trip_id);

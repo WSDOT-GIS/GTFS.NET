@@ -3,8 +3,14 @@ using Wsdot.Gtfs.Contract;
 
 namespace Wsdot.Gtfs.IO.ClassMap
 {
+	/// <summary>
+	/// Provides CSV mapping for <see cref="Calendar"/> class
+	/// </summary>
 	public class CalendarMap: CsvClassMap<Calendar>
 	{
+		/// <summary>
+		/// Creates CSV mapping.
+		/// </summary>
 		public override void CreateMap()
 		{
 			Map(m => m.service_id);

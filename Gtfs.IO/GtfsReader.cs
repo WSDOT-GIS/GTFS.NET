@@ -10,6 +10,9 @@ using Wsdot.Gtfs.IO.ClassMap;
 
 namespace Wsdot.Gtfs.IO
 {
+	/// <summary>
+	/// Reads a GTFS ZIP archive of CSV files.
+	/// </summary>
 	public static class GtfsReader
 	{
 
@@ -62,11 +65,11 @@ namespace Wsdot.Gtfs.IO
 		/// <param name="zip">The zip archive</param>
 		/// <param name="fileName">The name of the file inside of <paramref name="zip"/>.</param>
 		/// <param name="required">
-		/// Indicates if the file specified by <paramref name="filename"/> is required to be in <paramref name="zip"/>.
+		/// Indicates if the file specified by <paramref name="fileName"/> is required to be in <paramref name="zip"/>.
 		/// If this is set to <see langword="true"/> and the file is not found inside the zip, a <see cref="FileNotFoundException"/> will be thrown.
 		/// </param>
 		/// <exception cref="FileNotFoundException">
-		/// Thrown if <paramref name="zip"/> does not contain a file with a name matching <paramref name="filename"/>
+		/// Thrown if <paramref name="zip"/> does not contain a file with a name matching <paramref name="fileName"/>
 		/// AND if <paramref name="required"/> is set to <see langword="true"/>.
 		/// </exception>
 		/// <returns></returns>

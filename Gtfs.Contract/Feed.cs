@@ -2,6 +2,9 @@
 
 namespace Wsdot.Gtfs.Contract
 {
+	/// <summary>
+	/// Represents the contents of a General Transit Feed Specification (GTFS) Feed.
+	/// </summary>
 	public class GtfsFeed
 	{
 		/// <summary>

@@ -3,8 +3,14 @@ using Wsdot.Gtfs.Contract;
 
 namespace Wsdot.Gtfs.IO.ClassMap
 {
+	/// <summary>
+	/// Provides CSV mapping for <see cref="FeedInfo"/>.
+	/// </summary>
 	public class FeedInfoMap: CsvClassMap<FeedInfo>
 	{
+		/// <summary>
+		/// Create CSV map.
+		/// </summary>
 		public override void CreateMap()
 		{
 			Map(m => m.feed_publisher_name);

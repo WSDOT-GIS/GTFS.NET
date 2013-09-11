@@ -4,8 +4,12 @@ using Wsdot.Gtfs.Contract;
 
 namespace Wsdot.Gtfs.IO.ClassMap
 {
+	/// <summary>
+	/// Provides CSV mapping for <see cref="Route"/>.
+	/// </summary>
 	public class RouteMap : CsvClassMap<Route>
 	{
+		/// <summary>Create CSV map.</summary>
 		public override void CreateMap()
 		{
 			Map(m => m.route_id);
