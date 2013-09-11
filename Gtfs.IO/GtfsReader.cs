@@ -72,7 +72,7 @@ namespace Wsdot.Gtfs.IO
 		/// Thrown if <paramref name="zip"/> does not contain a file with a name matching <paramref name="fileName"/>
 		/// AND if <paramref name="required"/> is set to <see langword="true"/>.
 		/// </exception>
-		/// <returns></returns>
+		/// <returns>A list of <typeparamref name="T"/> objects.</returns>
 		static List<T> ParseCsv<T>(this ZipArchive zip, string fileName, bool required=false) where T : class, new()
 		{
 
