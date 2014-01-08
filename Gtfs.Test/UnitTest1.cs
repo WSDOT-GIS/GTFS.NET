@@ -39,19 +39,32 @@ namespace Wsdot.Gtfs.Test
 
 			var req = WebRequest.Create(zipUrl) as HttpWebRequest;
 
-			GtfsFeed gtfs;
+			GtfsFeed gtfs = null;
 
 			using (var response = req.GetResponse() as HttpWebResponse)
 			{
-				var zipBytes = new byte[response.ContentLength];
+				byte[] zipBytes = null;
 				Stream stream;
 				using (stream = response.GetResponseStream())
 				{
-					stream.Read(zipBytes, 0, zipBytes.Length);
+					if (stream.CanSeek)
+					{
+						stream.Position = 0;
+						gtfs = stream.ReadGtfs();
+					}
+					else
+					{
+						zipBytes = new byte[response.ContentLength];
+						stream.Read(zipBytes, 0, zipBytes.Length);
+					}
 				}
-				using(stream = new MemoryStream(zipBytes, false)) {
-					stream.Position = 0;
-					gtfs = stream.ReadGtfs();
+				if (zipBytes != null)
+				{
+					using (stream = new MemoryStream(zipBytes, false))
+					{
+						stream.Position = 0;
+						gtfs = stream.ReadGtfs();
+					}
 				}
 			}
 
