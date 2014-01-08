@@ -17,7 +17,7 @@ namespace Wsdot.Gtfs.Test
 		[TestProperty("gtfsFile", "sample-feed.zip")]
 		public void ReadSampleGtfs()
 		{
-			var zipPath = MethodInfo.GetCurrentMethod().GetCustomAttribute<TestPropertyAttribute>().Value;
+			var zipPath = MethodInfo.GetCurrentMethod().GetCustomAttributes(typeof(TestPropertyAttribute), false).Select(a => (TestPropertyAttribute)a).Where(a => a.Name == "gtfsFile").First().Value;
 
 			Assert.IsTrue(File.Exists(zipPath), "File not found: {0}", Path.GetFullPath(zipPath));
 
@@ -35,16 +35,22 @@ namespace Wsdot.Gtfs.Test
 		[TestProperty("url", "http://www.gtfs-data-exchange.com/agency/jefferson-transit-authority/latest.zip")]
 		public void ReadGtfsFromWeb()
 		{
-			var zipUrl = MethodInfo.GetCurrentMethod().GetCustomAttribute<TestPropertyAttribute>().Value;
+			var zipUrl = MethodInfo.GetCurrentMethod().GetCustomAttributes(typeof(TestPropertyAttribute), false).Select(a => (TestPropertyAttribute)a).Where(a => a.Name == "url").First().Value;
 
-			var req = WebRequest.CreateHttp(zipUrl);
+			var req = WebRequest.Create(zipUrl) as HttpWebRequest;
 
 			GtfsFeed gtfs;
 
-			using (var response = req.GetResponse())
+			using (var response = req.GetResponse() as HttpWebResponse)
 			{
-				using (var stream = response.GetResponseStream())
+				var zipBytes = new byte[response.ContentLength];
+				Stream stream;
+				using (stream = response.GetResponseStream())
 				{
+					stream.Read(zipBytes, 0, zipBytes.Length);
+				}
+				using(stream = new MemoryStream(zipBytes, false)) {
+					stream.Position = 0;
 					gtfs = stream.ReadGtfs();
 				}
 			}

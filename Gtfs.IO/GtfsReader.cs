@@ -1,4 +1,5 @@
 ﻿using CsvHelper;
+using Ionic.Zip;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -73,16 +74,15 @@ namespace Wsdot.Gtfs.IO
 		/// AND if <paramref name="required"/> is set to <see langword="true"/>.
 		/// </exception>
 		/// <returns>A list of <typeparamref name="T"/> objects.</returns>
-		static List<T> ParseCsv<T>(this ZipArchive zip, string fileName, bool required=false) where T : class, new()
+		static List<T> ParseCsv<T>(this ZipFile zip, string fileName, bool required=false) where T : class, new()
 		{
-
 			List<T> list = null;
 
-			var zipEntry = zip.Entries.FirstOrDefault(e => e.Name == fileName);
+			var zipEntry = zip.Entries.FirstOrDefault(e => e.FileName == fileName);
 
 			if (zipEntry != null)
 			{
-				using (var agencyStream = zipEntry.Open())
+				using (var agencyStream = zipEntry.OpenReader())
 				{
 					list = agencyStream.ParseCsv<T>();
 				}
@@ -102,7 +102,7 @@ namespace Wsdot.Gtfs.IO
 		/// <returns>A <see cref="GtfsFeed"/> representation of the contents of <paramref name="stream"/>.</returns>
 		public static GtfsFeed ReadGtfs(this Stream stream)
 		{
-			var zip = new System.IO.Compression.ZipArchive(stream, ZipArchiveMode.Read, false);
+			var zip = ZipFile.Read(stream);
 
 			var feed = new GtfsFeed
 			{
