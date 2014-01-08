@@ -45,14 +45,20 @@ namespace Wsdot.Gtfs.Test
 			using (var response = req.GetResponse() as HttpWebResponse)
 			{
 				Stream stream;
-				using (var memStream = new MemoryStream())
+
+				using (stream = response.GetResponseStream())
 				{
-					using (stream = response.GetResponseStream())
-					{
-						StreamUtils.Copy(stream, memStream, new byte[4096]);
-					}
-					gtfs = memStream.ReadGtfs();
+					gtfs = stream.ReadGtfs();
 				}
+
+				////using (var memStream = new MemoryStream())
+				////{
+				////	using (stream = response.GetResponseStream())
+				////	{
+				////		StreamUtils.Copy(stream, memStream, new byte[4096]);
+				////	}
+				////	gtfs = memStream.ReadGtfs();
+				////}
 			}
 
 			RunTestsOnGtfs(gtfs);
