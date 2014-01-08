@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Net;
+using ICSharpCode.SharpZipLib.Core;
 
 namespace Wsdot.Gtfs.Test
 {
@@ -43,28 +44,14 @@ namespace Wsdot.Gtfs.Test
 
 			using (var response = req.GetResponse() as HttpWebResponse)
 			{
-				byte[] zipBytes = null;
 				Stream stream;
-				using (stream = response.GetResponseStream())
+				using (var memStream = new MemoryStream())
 				{
-					if (stream.CanSeek)
+					using (stream = response.GetResponseStream())
 					{
-						stream.Position = 0;
-						gtfs = stream.ReadGtfs();
+						StreamUtils.Copy(stream, memStream, new byte[4096]);
 					}
-					else
-					{
-						zipBytes = new byte[response.ContentLength];
-						stream.Read(zipBytes, 0, zipBytes.Length);
-					}
-				}
-				if (zipBytes != null)
-				{
-					using (stream = new MemoryStream(zipBytes, false))
-					{
-						stream.Position = 0;
-						gtfs = stream.ReadGtfs();
-					}
+					gtfs = memStream.ReadGtfs();
 				}
 			}
 

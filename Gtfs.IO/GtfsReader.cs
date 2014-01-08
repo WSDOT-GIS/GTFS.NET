@@ -1,4 +1,5 @@
 ﻿using CsvHelper;
+using ICSharpCode.SharpZipLib.Core;
 using ICSharpCode.SharpZipLib.Zip;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using Wsdot.Gtfs.Contract;
 using Wsdot.Gtfs.IO.ClassMap;
 
