@@ -1,5 +1,5 @@
 ﻿using CsvHelper;
-using Ionic.Zip;
+using ICSharpCode.SharpZipLib.Zip;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -78,11 +78,11 @@ namespace Wsdot.Gtfs.IO
 		{
 			List<T> list = null;
 
-			var zipEntry = zip.Entries.FirstOrDefault(e => e.FileName == fileName);
+			var zipEntry = zip.GetEntry(fileName);
 
 			if (zipEntry != null)
 			{
-				using (var agencyStream = zipEntry.OpenReader())
+				using (var agencyStream =  zip.GetInputStream(zipEntry))
 				{
 					list = agencyStream.ParseCsv<T>();
 				}
@@ -102,7 +102,7 @@ namespace Wsdot.Gtfs.IO
 		/// <returns>A <see cref="GtfsFeed"/> representation of the contents of <paramref name="stream"/>.</returns>
 		public static GtfsFeed ReadGtfs(this Stream stream)
 		{
-			var zip = ZipFile.Read(stream);
+			var zip = new ZipFile(stream);
 
 			var feed = new GtfsFeed
 			{
