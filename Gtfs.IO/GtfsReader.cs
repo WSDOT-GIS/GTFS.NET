@@ -1,10 +1,13 @@
 ﻿using CsvHelper;
+using ICSharpCode.SharpZipLib.Core;
+using ICSharpCode.SharpZipLib.Zip;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using Wsdot.Gtfs.Contract;
 using Wsdot.Gtfs.IO.ClassMap;
 
@@ -73,16 +76,15 @@ namespace Wsdot.Gtfs.IO
 		/// AND if <paramref name="required"/> is set to <see langword="true"/>.
 		/// </exception>
 		/// <returns>A list of <typeparamref name="T"/> objects.</returns>
-		static List<T> ParseCsv<T>(this ZipArchive zip, string fileName, bool required=false) where T : class, new()
+		static List<T> ParseCsv<T>(this ZipFile zip, string fileName, bool required=false) where T : class, new()
 		{
-
 			List<T> list = null;
 
-			var zipEntry = zip.Entries.FirstOrDefault(e => e.Name == fileName);
+			var zipEntry = zip.GetEntry(fileName);
 
 			if (zipEntry != null)
 			{
-				using (var agencyStream = zipEntry.Open())
+				using (var agencyStream =  zip.GetInputStream(zipEntry))
 				{
 					list = agencyStream.ParseCsv<T>();
 				}
@@ -102,26 +104,95 @@ namespace Wsdot.Gtfs.IO
 		/// <returns>A <see cref="GtfsFeed"/> representation of the contents of <paramref name="stream"/>.</returns>
 		public static GtfsFeed ReadGtfs(this Stream stream)
 		{
-			var zip = new System.IO.Compression.ZipArchive(stream, ZipArchiveMode.Read, false);
+			GtfsFeed feed = null;
 
-			var feed = new GtfsFeed
+			if (stream.CanSeek)
 			{
-				Agency = zip.ParseCsv<Agency>("agency.txt", true),
-				Stops = zip.ParseCsv<Stop>("stops.txt", true),
-				Routes = zip.ParseCsv<Route>("routes.txt", true),
-				Trips = zip.ParseCsv<Trip>("trips.txt", true),
-				StopTimes = zip.ParseCsv<StopTime>("stop_times.txt", true),
-				Calendar = zip.ParseCsv<Calendar>("calendar.txt", true),
-				CalendarDates = zip.ParseCsv<CalendarDate>("calendar_dates.txt"),
-				FareAttributes = zip.ParseCsv<FareAttribute>("fare_attributes.txt"),
-				FareRules = zip.ParseCsv<FareRule>("fare_rules.txt"),
-				Shapes = zip.ParseCsv<Shape>("shapes.txt"),
-				Frequencies = zip.ParseCsv<Frequency>("frequencies.txt"),
-				Transfers = zip.ParseCsv<Transfer>("transfers.txt"),
-			};
+				var zip = new ZipFile(stream);
 
-			var feedInfo = zip.ParseCsv<FeedInfo>("feed_info.txt");
-			feed.FeedInfo = feedInfo != null ? feedInfo.FirstOrDefault() : null;
+				feed = new GtfsFeed
+				{
+					Agency = zip.ParseCsv<Agency>("agency.txt", true),
+					Stops = zip.ParseCsv<Stop>("stops.txt", true),
+					Routes = zip.ParseCsv<Route>("routes.txt", true),
+					Trips = zip.ParseCsv<Trip>("trips.txt", true),
+					StopTimes = zip.ParseCsv<StopTime>("stop_times.txt", true),
+					Calendar = zip.ParseCsv<Calendar>("calendar.txt", true),
+					CalendarDates = zip.ParseCsv<CalendarDate>("calendar_dates.txt"),
+					FareAttributes = zip.ParseCsv<FareAttribute>("fare_attributes.txt"),
+					FareRules = zip.ParseCsv<FareRule>("fare_rules.txt"),
+					Shapes = zip.ParseCsv<Shape>("shapes.txt"),
+					Frequencies = zip.ParseCsv<Frequency>("frequencies.txt"),
+					Transfers = zip.ParseCsv<Transfer>("transfers.txt"),
+				};
+
+				var feedInfo = zip.ParseCsv<FeedInfo>("feed_info.txt");
+				feed.FeedInfo = feedInfo != null ? feedInfo.FirstOrDefault() : null;
+			}
+			else
+			{
+				var txtRe = new Regex(@"\.txt$", RegexOptions.IgnoreCase);
+				feed = new GtfsFeed();
+				// See https://github.com/icsharpcode/SharpZipLib/wiki/Zip-Samples#wiki-anchorUnpackZIS
+				var zipInputStream = new ZipInputStream(stream);
+				var zipEntry = zipInputStream.GetNextEntry();
+				while (zipEntry != null)
+				{
+					if (zipEntry.IsFile && txtRe.IsMatch(zipEntry.Name))
+					{
+						byte[] buffer = new byte[4096];
+
+						using (var memStream = new MemoryStream())
+						{
+							StreamUtils.Copy(zipInputStream, memStream, buffer);
+							memStream.Position = 0;
+							switch (zipEntry.Name)
+							{
+								case "agency.txt":
+									feed.Agency = memStream.ParseCsv<Agency>();
+									break;
+								case "stops.txt":
+									feed.Stops = memStream.ParseCsv<Stop>();
+									break;
+								case "routes.txt":
+									feed.Routes = memStream.ParseCsv<Route>();
+									break;
+								case "trips.txt":
+									feed.Trips = memStream.ParseCsv<Trip>();
+									break;
+								case "stop_times.txt":
+									feed.StopTimes = memStream.ParseCsv<StopTime>();
+									break;
+								case "calendar.txt":
+									feed.Calendar = memStream.ParseCsv<Calendar>();
+									break;
+								case "calendar_dates.txt":
+									feed.CalendarDates = memStream.ParseCsv<CalendarDate>();
+									break;
+								case "fare_attributes.txt":
+									feed.FareAttributes = memStream.ParseCsv<FareAttribute>();
+									break;
+								case "fare_rules.txt":
+									feed.FareRules = memStream.ParseCsv<FareRule>();
+									break;
+								case "shapes.txt":
+									feed.Shapes = memStream.ParseCsv<Shape>();
+									break;
+								case "frequencies.txt":
+									feed.Frequencies = memStream.ParseCsv<Frequency>();
+									break;
+								case "transfers.txt":
+									feed.Transfers = memStream.ParseCsv<Transfer>();
+									break;
+								default:
+									break;
+							}
+						}
+					}
+
+					zipEntry = zipInputStream.GetNextEntry();
+				}
+			}
 
 			return feed;
 		}

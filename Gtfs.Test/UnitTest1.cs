@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Net;
+using ICSharpCode.SharpZipLib.Core;
 
 namespace Wsdot.Gtfs.Test
 {
@@ -17,7 +18,7 @@ namespace Wsdot.Gtfs.Test
 		[TestProperty("gtfsFile", "sample-feed.zip")]
 		public void ReadSampleGtfs()
 		{
-			var zipPath = MethodInfo.GetCurrentMethod().GetCustomAttribute<TestPropertyAttribute>().Value;
+			var zipPath = MethodInfo.GetCurrentMethod().GetCustomAttributes(typeof(TestPropertyAttribute), false).Select(a => (TestPropertyAttribute)a).Where(a => a.Name == "gtfsFile").First().Value;
 
 			Assert.IsTrue(File.Exists(zipPath), "File not found: {0}", Path.GetFullPath(zipPath));
 
@@ -35,18 +36,29 @@ namespace Wsdot.Gtfs.Test
 		[TestProperty("url", "http://www.gtfs-data-exchange.com/agency/jefferson-transit-authority/latest.zip")]
 		public void ReadGtfsFromWeb()
 		{
-			var zipUrl = MethodInfo.GetCurrentMethod().GetCustomAttribute<TestPropertyAttribute>().Value;
+			var zipUrl = MethodInfo.GetCurrentMethod().GetCustomAttributes(typeof(TestPropertyAttribute), false).Select(a => (TestPropertyAttribute)a).Where(a => a.Name == "url").First().Value;
 
-			var req = WebRequest.CreateHttp(zipUrl);
+			var req = WebRequest.Create(zipUrl) as HttpWebRequest;
 
-			GtfsFeed gtfs;
+			GtfsFeed gtfs = null;
 
-			using (var response = req.GetResponse())
+			using (var response = req.GetResponse() as HttpWebResponse)
 			{
-				using (var stream = response.GetResponseStream())
+				Stream stream;
+
+				using (stream = response.GetResponseStream())
 				{
 					gtfs = stream.ReadGtfs();
 				}
+
+				////using (var memStream = new MemoryStream())
+				////{
+				////	using (stream = response.GetResponseStream())
+				////	{
+				////		StreamUtils.Copy(stream, memStream, new byte[4096]);
+				////	}
+				////	gtfs = memStream.ReadGtfs();
+				////}
 			}
 
 			RunTestsOnGtfs(gtfs);
