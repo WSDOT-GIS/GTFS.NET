@@ -1,11 +1,10 @@
-﻿using Wsdot.Gtfs.Contract;
-using Wsdot.Gtfs.IO;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Net;
-using ICSharpCode.SharpZipLib.Core;
+using System.Reflection;
+using Wsdot.Gtfs.Contract;
+using Wsdot.Gtfs.IO;
 
 namespace Wsdot.Gtfs.Test
 {
@@ -50,15 +49,6 @@ namespace Wsdot.Gtfs.Test
 				{
 					gtfs = stream.ReadGtfs();
 				}
-
-				////using (var memStream = new MemoryStream())
-				////{
-				////	using (stream = response.GetResponseStream())
-				////	{
-				////		StreamUtils.Copy(stream, memStream, new byte[4096]);
-				////	}
-				////	gtfs = memStream.ReadGtfs();
-				////}
 			}
 
 			RunTestsOnGtfs(gtfs);
