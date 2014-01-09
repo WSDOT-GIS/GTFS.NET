@@ -13,11 +13,14 @@ namespace Wsdot.Gtfs.Test
 	{
 
 
+		/// <summary>
+		/// Test reading a GTFS ZIP file from the file system.
+		/// </summary>
 		[TestMethod]
 		[TestProperty("gtfsFile", "sample-feed.zip")]
 		public void ReadSampleGtfs()
 		{
-			var zipPath = MethodInfo.GetCurrentMethod().GetCustomAttributes(typeof(TestPropertyAttribute), false).Select(a => (TestPropertyAttribute)a).Where(a => a.Name == "gtfsFile").First().Value;
+			var zipPath = MethodInfo.GetCurrentMethod().GetTestProperty("gtfsFile");
 
 			Assert.IsTrue(File.Exists(zipPath), "File not found: {0}", Path.GetFullPath(zipPath));
 
@@ -31,11 +34,14 @@ namespace Wsdot.Gtfs.Test
 			RunTestsOnGtfs(gtfs);
 		}
 
+		/// <summary>
+		/// Test downloading a GTFS file from the Internet and parsing it into a GtfsFeed.
+		/// </summary>
 		[TestMethod]
 		[TestProperty("url", "http://www.gtfs-data-exchange.com/agency/jefferson-transit-authority/latest.zip")]
 		public void ReadGtfsFromWeb()
 		{
-			var zipUrl = MethodInfo.GetCurrentMethod().GetCustomAttributes(typeof(TestPropertyAttribute), false).Select(a => (TestPropertyAttribute)a).Where(a => a.Name == "url").First().Value;
+			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
 
 			var req = WebRequest.Create(zipUrl) as HttpWebRequest;
 
@@ -55,6 +61,10 @@ namespace Wsdot.Gtfs.Test
 
 		}
 
+		/// <summary>
+		/// A common set of tests to run on a GTFS feed.
+		/// </summary>
+		/// <param name="gtfs"></param>
 		private static void RunTestsOnGtfs(GtfsFeed gtfs)
 		{
 			// Test for the different required tables.
