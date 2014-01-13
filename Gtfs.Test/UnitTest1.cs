@@ -34,16 +34,9 @@ namespace Wsdot.Gtfs.Test
 			RunTestsOnGtfs(gtfs);
 		}
 
-		/// <summary>
-		/// Test downloading a GTFS file from the Internet and parsing it into a GtfsFeed.
-		/// </summary>
-		[TestMethod]
-		[TestProperty("url", "http://www.gtfs-data-exchange.com/agency/jefferson-transit-authority/latest.zip")]
-		public void ReadGtfsFromWeb()
+		private void ReadGtfsFromWeb(string url = null)
 		{
-			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
-
-			var req = WebRequest.Create(zipUrl) as HttpWebRequest;
+			var req = WebRequest.Create(url) as HttpWebRequest;
 
 			GtfsFeed gtfs = null;
 
@@ -58,7 +51,28 @@ namespace Wsdot.Gtfs.Test
 			}
 
 			RunTestsOnGtfs(gtfs);
+		}
 
+		/// <summary>
+		/// Test downloading a GTFS file from the Internet and parsing it into a GtfsFeed.
+		/// </summary>
+		[TestMethod]
+		[TestProperty("url", "http://www.gtfs-data-exchange.com/agency/jefferson-transit-authority/latest.zip")]
+		public void ReadGtfsFromWeb()
+		{
+			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
+			ReadGtfsFromWeb(zipUrl);
+		}
+
+		/// <summary>
+		/// Test downloading a GTFS file from the Internet and parsing it into a GtfsFeed.
+		/// </summary>
+		[TestMethod]
+		[TestProperty("url", "http://www.gtfs-data-exchange.com/agency/city-of-seattle/latest.zip")]
+		public void ReadCityOfSeattleGtfsFromWeb()
+		{
+			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
+			ReadGtfsFromWeb(zipUrl);
 		}
 
 		/// <summary>
