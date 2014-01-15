@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -11,7 +12,29 @@ namespace Wsdot.Gtfs.Test
 	[TestClass]
 	public class UnitTest1
 	{
+		ConsoleTraceListener _consoleListener;
 
+		private TestContext _testContext;
+
+		public TestContext TestContext
+		{
+			get { return _testContext; }
+			set { _testContext = value; }
+		}
+
+
+		[TestInitialize]
+		public void Initialize()
+		{
+			_consoleListener = new ConsoleTraceListener();
+			Trace.Listeners.Add(_consoleListener);
+		}
+
+		[TestCleanup]
+		public void Cleanup()
+		{
+			Trace.Listeners.Remove(_consoleListener);
+		}
 
 		/// <summary>
 		/// Test reading a GTFS ZIP file from the file system.
@@ -34,7 +57,7 @@ namespace Wsdot.Gtfs.Test
 			RunTestsOnGtfs(gtfs);
 		}
 
-		private void ReadGtfsFromWeb(string url = null)
+		private GtfsFeed ReadGtfsFromWeb(string url = null)
 		{
 			var req = WebRequest.Create(url) as HttpWebRequest;
 
@@ -51,6 +74,8 @@ namespace Wsdot.Gtfs.Test
 			}
 
 			RunTestsOnGtfs(gtfs);
+
+			return gtfs;
 		}
 
 		/// <summary>
@@ -58,7 +83,7 @@ namespace Wsdot.Gtfs.Test
 		/// </summary>
 		[TestMethod]
 		[TestProperty("url", "http://www.gtfs-data-exchange.com/agency/jefferson-transit-authority/latest.zip")]
-		public void ReadGtfsFromWeb()
+		public void ReadJeffersonGtfsFromWeb()
 		{
 			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
 			ReadGtfsFromWeb(zipUrl);
@@ -73,6 +98,18 @@ namespace Wsdot.Gtfs.Test
 		{
 			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
 			ReadGtfsFromWeb(zipUrl);
+		}
+
+		/// <summary>
+		/// Test downloading a GTFS file from the Internet and parsing it into a GtfsFeed.
+		/// </summary>
+		[TestMethod]
+		[TestProperty("url", "http://www.gtfs-data-exchange.com/agency/intercity-transit/latest.zip")]
+		public void ReadITFromWeb()
+		{
+			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
+			var gtfs = ReadGtfsFromWeb(zipUrl);
+			Assert.IsTrue(gtfs.Shapes.Count > 0, "Shapes should not be empty.");
 		}
 
 		/// <summary>
@@ -165,6 +202,7 @@ namespace Wsdot.Gtfs.Test
 
 			if (gtfs.Shapes != null)
 			{
+				////Assert.IsTrue(gtfs.Shapes.Count > 0, "Shapes property is not null but does not contain any elements.");
 				foreach (var item in gtfs.Shapes)
 				{
 					Assert.IsNotNull(item.shape_id, "shape_id cannot be null.");

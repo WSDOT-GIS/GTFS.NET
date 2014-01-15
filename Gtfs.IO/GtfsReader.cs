@@ -1,4 +1,5 @@
 ﻿using CsvHelper;
+using CsvHelper.Configuration;
 using ICSharpCode.SharpZipLib.Core;
 using ICSharpCode.SharpZipLib.Zip;
 using System;
@@ -17,7 +18,6 @@ namespace Wsdot.Gtfs.IO
 	/// </summary>
 	public static class GtfsReader
 	{
-
 		static List<T> ParseCsv<T>(this Stream stream) where T : class, new()
 		{
 			List<T> list = new List<T>();
@@ -25,27 +25,29 @@ namespace Wsdot.Gtfs.IO
 
 			using (var streamReader = new StreamReader(stream, UTF8Encoding.UTF8))
 			{
-				var csvReader = new CsvReader(streamReader);
-				csvReader.Configuration.WillThrowOnMissingField = false;
+				var csvConfig = new CsvConfiguration();
+				csvConfig.WillThrowOnMissingField = false;
+
 				// Add maps for types.
 				Type t = typeof(T);
 				if (t == typeof(Calendar))
 				{
-					csvReader.Configuration.RegisterClassMap<CalendarMap>();
+					csvConfig.RegisterClassMap<CalendarMap>();
 				}
 				else if (t == typeof(CalendarDate))
 				{
-					csvReader.Configuration.RegisterClassMap<CalendarDateMap>();
+					csvConfig.RegisterClassMap<CalendarDateMap>();
 				}
 				else if (t == typeof(Route))
 				{
-					csvReader.Configuration.RegisterClassMap<RouteMap>();
+					csvConfig.RegisterClassMap<RouteMap>();
 				}
 				else if (t == typeof(StopTime))
 				{
-					csvReader.Configuration.RegisterClassMap<StopTimeMap>();
+					csvConfig.RegisterClassMap<StopTimeMap>();
 				}
 
+				var csvReader = new CsvReader(streamReader, csvConfig);
 				try
 				{
 					list = csvReader.GetRecords<T>().ToList();
