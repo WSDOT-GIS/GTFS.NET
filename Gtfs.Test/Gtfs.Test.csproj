@@ -40,9 +40,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="ServiceStack.Text">
       <HintPath>..\packages\ServiceStack.Text.3.9.59\lib\net35\ServiceStack.Text.dll</HintPath>

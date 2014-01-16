@@ -99,31 +99,42 @@ namespace Wsdot.Gtfs.IO
 		/// Reads a GTFS zip archive stream and converts it into a <see cref="GtfsFeed"/>.
 		/// </summary>
 		/// <param name="stream">A zip archive <see cref="Stream"/> containing General Transit Feet Specification data.</param>
+		/// <param name="options">
+		/// Use this to specify which files you want to extract from the GTFS. Defaults to <see cref="GtfsFileOptions.All"/>.
+		/// You should specify this parameter if you know that you will only need certain tables out of the GTFS.
+		/// </param>
 		/// <returns>A <see cref="GtfsFeed"/> representation of the contents of <paramref name="stream"/>.</returns>
-		public static GtfsFeed ReadGtfs(this Stream stream)
+		public static GtfsFeed ReadGtfs(this Stream stream, GtfsFileOptions options=GtfsFileOptions.All)
 		{
 			var zip = new System.IO.Compression.ZipArchive(stream, ZipArchiveMode.Read, false);
 
+			if (options == GtfsFileOptions.None)
+			{
+				throw new ArgumentException("The \"options\" parameter cannot be \"None\".");
+			}
+
 			var feed = new GtfsFeed
 			{
-				Agency = zip.ParseCsv<Agency>("agency.txt", true),
-				Stops = zip.ParseCsv<Stop>("stops.txt", true),
-				Routes = zip.ParseCsv<Route>("routes.txt", true),
-				Trips = zip.ParseCsv<Trip>("trips.txt", true),
-				StopTimes = zip.ParseCsv<StopTime>("stop_times.txt", true),
-				Calendar = zip.ParseCsv<Calendar>("calendar.txt", true),
-				CalendarDates = zip.ParseCsv<CalendarDate>("calendar_dates.txt"),
-				FareAttributes = zip.ParseCsv<FareAttribute>("fare_attributes.txt"),
-				FareRules = zip.ParseCsv<FareRule>("fare_rules.txt"),
-				Shapes = zip.ParseCsv<Shape>("shapes.txt"),
-				Frequencies = zip.ParseCsv<Frequency>("frequencies.txt"),
-				Transfers = zip.ParseCsv<Transfer>("transfers.txt"),
+				Agency = options.HasFlag(GtfsFileOptions.Agency) ? zip.ParseCsv<Agency>("agency.txt", true) : null,
+				Stops =  options.HasFlag(GtfsFileOptions.Stops) ? zip.ParseCsv<Stop>("stops.txt", true) : null,
+				Routes = options.HasFlag(GtfsFileOptions.Routes) ? zip.ParseCsv<Route>("routes.txt", true) : null,
+				Trips = options.HasFlag(GtfsFileOptions.Trips) ? zip.ParseCsv<Trip>("trips.txt", true) : null,
+				StopTimes =options.HasFlag(GtfsFileOptions.StopTimes) ?  zip.ParseCsv<StopTime>("stop_times.txt", true) : null,
+				Calendar = options.HasFlag(GtfsFileOptions.Calendar) ? zip.ParseCsv<Calendar>("calendar.txt", true) : null,
+				CalendarDates = options.HasFlag(GtfsFileOptions.CalendarDates) ? zip.ParseCsv<CalendarDate>("calendar_dates.txt") : null,
+				FareAttributes = options.HasFlag(GtfsFileOptions.FareAttributes) ? zip.ParseCsv<FareAttribute>("fare_attributes.txt") : null,
+				FareRules = options.HasFlag(GtfsFileOptions.FareRules) ? zip.ParseCsv<FareRule>("fare_rules.txt") : null,
+				Shapes = options.HasFlag(GtfsFileOptions.Shapes) ? zip.ParseCsv<Shape>("shapes.txt") : null,
+				Frequencies = options.HasFlag(GtfsFileOptions.Frequencies) ? zip.ParseCsv<Frequency>("frequencies.txt") : null,
+				Transfers = options.HasFlag(GtfsFileOptions.Transfers) ? zip.ParseCsv<Transfer>("transfers.txt") : null
 			};
 
-			var feedInfo = zip.ParseCsv<FeedInfo>("feed_info.txt");
+			var feedInfo = options.HasFlag(GtfsFileOptions.FeedInfo) ? zip.ParseCsv<FeedInfo>("feed_info.txt") : null;
 			feed.FeedInfo = feedInfo != null ? feedInfo.FirstOrDefault() : null;
 
 			return feed;
 		}
 	}
+
+
 }

@@ -1,9 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using Wsdot.Gtfs.Contract;
 using Wsdot.Gtfs.IO;
 
@@ -55,6 +57,46 @@ namespace Wsdot.Gtfs.Test
 			}
 
 			RunTestsOnGtfs(gtfs);
+		}
+
+		/// <summary>
+		/// Test reading a GTFS ZIP file from the file system.
+		/// </summary>
+		[TestMethod]
+		[TestProperty("gtfsFile", "sample-feed.zip")]
+		[TestProperty("options", "Stops,Routes,Shapes")]
+		public void ReadSampleGtfsWithOptions()
+		{
+			var methodInfo = MethodInfo.GetCurrentMethod();
+			var options = (GtfsFileOptions)Enum.Parse(typeof(GtfsFileOptions), methodInfo.GetTestProperty("options"));
+			var zipPath = methodInfo.GetTestProperty("gtfsFile");
+
+			Assert.IsTrue(File.Exists(zipPath), "File not found: {0}", Path.GetFullPath(zipPath));
+
+			GtfsFeed gtfs;
+
+
+			using (FileStream stream = File.Open(zipPath, FileMode.Open, FileAccess.Read))
+			{
+				gtfs = stream.ReadGtfs(options);
+			}
+
+			var properties = typeof(GtfsFeed).GetProperties();
+
+			Regex re = new Regex("^((Stops)|(Routes)|(Shapes))$", RegexOptions.ExplicitCapture);
+
+			foreach (var p in properties)
+			{
+				var value = p.GetValue(gtfs);
+				if (re.IsMatch(p.Name))
+				{
+					Assert.IsNotNull(value, "The \"{0}\" property should not be null.", p.Name);
+				}
+				else
+				{
+					Assert.IsNull(value, "The \"{0}\" property should be null.", p.Name);
+				}
+			}
 		}
 
 		private GtfsFeed ReadGtfsFromWeb(string url = null)
