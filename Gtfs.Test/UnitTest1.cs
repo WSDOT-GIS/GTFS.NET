@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Net;
+using System.Net.Http;
 using System.Reflection;
 using Wsdot.Gtfs.Contract;
 using Wsdot.Gtfs.IO;
@@ -59,22 +59,19 @@ namespace Wsdot.Gtfs.Test
 
 		private GtfsFeed ReadGtfsFromWeb(string url = null)
 		{
-			var req = WebRequest.Create(url) as HttpWebRequest;
-
 			GtfsFeed gtfs = null;
-
-			using (var response = req.GetResponse() as HttpWebResponse)
+			using (var httpClient = new HttpClient())
 			{
-				Stream stream;
-
-				using (stream = response.GetResponseStream())
+				httpClient.GetStreamAsync(url).ContinueWith(t =>
 				{
-					gtfs = stream.ReadGtfs();
-				}
+					using (t.Result)
+					{
+						gtfs = t.Result.ReadGtfs();
+					}
+				}).Wait();
 			}
 
 			RunTestsOnGtfs(gtfs);
-
 			return gtfs;
 		}
 
