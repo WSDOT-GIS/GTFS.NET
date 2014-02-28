@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
@@ -59,6 +60,29 @@ namespace Wsdot.Gtfs.Test
 		public static bool IsValidLongitude(this double longitude)
 		{
 			return longitude.IsInRange(-180, 180);
+		}
+
+		public static bool HasValidLongitudeAndLatitude(this IEnumerable<double?> coordinates)
+		{
+			if (coordinates.Count() < 2)
+			{
+				return false;
+			}
+			return coordinates.ElementAt(0).Value.IsValidLongitude() && coordinates.ElementAt(1).Value.IsValidLongitude();
+		}
+
+		public static bool HasValidLongitudesAndLatitudes<T>(this IEnumerable<T> coordinates) where T : IEnumerable<double?>
+		{
+			bool output = true;
+			foreach (var item in coordinates)
+			{
+				if (!item.HasValidLongitudeAndLatitude())
+				{
+					output = false;
+					break;
+				}
+			}
+			return output;
 		}
 
 		/// <summary>

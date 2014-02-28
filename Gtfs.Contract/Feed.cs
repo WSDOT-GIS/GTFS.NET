@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Wsdot.Gtfs.Contract.GeoJson;
 
 namespace Wsdot.Gtfs.Contract
 {
@@ -17,7 +18,7 @@ namespace Wsdot.Gtfs.Contract
 		/// Individual locations where vehicles pick up or drop off passengers.
 		/// </summary>
 		[Required]
-		public List<Stop> Stops { get; set; }
+		public FeatureCollection<StopFeature> Stops { get; set; }
 
 		/// <summary>
 		/// Transit routes. A route is a group of trips that are displayed to riders as a single service.
@@ -63,7 +64,7 @@ namespace Wsdot.Gtfs.Contract
 		/// <summary>
 		/// Rules for drawing lines on a map to represent a transit organization's routes.
 		/// </summary>
-		public List<Shape> Shapes { get; set; }
+		public FeatureCollection<ShapeFeature> Shapes { get; set; }
 
 		/// <summary>
 		/// Headway (time between trips) for routes with variable frequency of service.

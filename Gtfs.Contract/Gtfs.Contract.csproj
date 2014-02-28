@@ -35,9 +35,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .NET Framework is automatically included -->
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Agency.cs" />
     <Compile Include="Calendar.cs" />
     <Compile Include="CalendarDate.cs" />
@@ -47,6 +44,8 @@
     <Compile Include="Feed.cs" />
     <Compile Include="FeedInfo.cs" />
     <Compile Include="Frequency.cs" />
+    <Compile Include="GeoJson\GeoJson.cs" />
+    <Compile Include="GeoJson\StopFeatureProperties.cs" />
     <Compile Include="PaymentMethod.cs" />
     <Compile Include="PickupOrDropOffType.cs" />
     <Compile Include="Shape.cs" />
@@ -63,6 +62,9 @@
     <Compile Include="TripDirectionId.cs" />
     <Compile Include="UniqueAttribute.cs" />
     <Compile Include="WheelchairBoarding.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

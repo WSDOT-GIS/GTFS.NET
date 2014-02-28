@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -7,6 +8,7 @@ using System.Net.Http;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using Wsdot.Gtfs.Contract;
+using Wsdot.Gtfs.Contract.GeoJson;
 using Wsdot.Gtfs.IO;
 
 namespace Wsdot.Gtfs.Test
@@ -64,7 +66,7 @@ namespace Wsdot.Gtfs.Test
 		/// </summary>
 		[TestMethod]
 		[TestProperty("gtfsFile", "sample-feed.zip")]
-		[TestProperty("options", "Stops,Routes,Shapes")]
+		[TestProperty("options", "Stops,Routes")]
 		public void ReadSampleGtfsWithOptions()
 		{
 			var methodInfo = MethodInfo.GetCurrentMethod();
@@ -83,7 +85,7 @@ namespace Wsdot.Gtfs.Test
 
 			var properties = typeof(GtfsFeed).GetProperties();
 
-			Regex re = new Regex("^((Stops)|(Routes)|(Shapes))$", RegexOptions.ExplicitCapture);
+			Regex re = new Regex("^((Stops)|(Routes))$", RegexOptions.ExplicitCapture);
 
 			foreach (var p in properties)
 			{
@@ -148,7 +150,8 @@ namespace Wsdot.Gtfs.Test
 		{
 			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
 			var gtfs = ReadGtfsFromWeb(zipUrl);
-			Assert.IsTrue(gtfs.Shapes.Count > 0, "Shapes should not be empty.");
+			Assert.IsTrue(gtfs.Shapes.features.Length > 0, "Shapes should not be empty.");
+			SerializeGtfs(gtfs, "intercity-transit.txt");
 		}
 
 		/// <summary>
@@ -174,13 +177,13 @@ namespace Wsdot.Gtfs.Test
 				Assert.IsNotNull(agency.agency_timezone, "agency.agency_timezone cannot be null.");
 			}
 
-			foreach (var stop in gtfs.Stops)
+			foreach (var stop in gtfs.Stops.features)
 			{
-				Assert.IsNotNull(stop.stop_id, "stop.stop_id cannot be null.");
-				Assert.IsNotNull(stop.stop_name, "stop.stop_name cannot be null.");
+				Assert.IsNotNull(stop.id, "stop.stop_id cannot be null.");
+				Assert.IsNotNull(stop.properties.stop_name, "stop.stop_name cannot be null.");
 				// Test to see if the lat is a "valid WGS 84 latitude".
-				Assert.IsTrue(stop.stop_lat.IsValidLatitude());
-				Assert.IsTrue(stop.stop_lon.IsValidLongitude());
+				Assert.IsTrue(stop.geometry.coordinates[1].IsValidLatitude());
+				Assert.IsTrue(stop.geometry.coordinates[0].IsValidLongitude());
 			}
 
 			foreach (var route in gtfs.Routes)
@@ -241,15 +244,29 @@ namespace Wsdot.Gtfs.Test
 
 			if (gtfs.Shapes != null)
 			{
-				////Assert.IsTrue(gtfs.Shapes.Count > 0, "Shapes property is not null but does not contain any elements.");
-				foreach (var item in gtfs.Shapes)
+				Assert.IsTrue(gtfs.Shapes.features != null && gtfs.Shapes.features.Length > 0,
+					"Shapes property is not null but does not contain any features.");
+				foreach (var item in gtfs.Shapes.features)
 				{
-					Assert.IsNotNull(item.shape_id, "shape_id cannot be null.");
-					Assert.IsTrue(item.shape_pt_lat.IsValidLatitude(), string.Format("{0} is not a valid latitude.", item.shape_pt_lat));
-					Assert.IsTrue(item.shape_pt_lon.IsValidLongitude(), string.Format("{0} is not a valid longitude.", item.shape_pt_lon));
-					Assert.IsTrue(item.shape_pt_sequence >= 0, "Shape.shape_pt_sequence cannot be a negative number.");
+					Assert.IsNotNull(item.id, "shape_id cannot be null.");
+					Assert.IsTrue(((ShapeFeature)item).geometry.coordinates.HasValidLongitudesAndLatitudes());
 				}
 			}
 		}
+
+		private void SerializeGtfs(GtfsFeed gtfs, string filename)
+		{
+			var serializer = new JsonSerializer()
+			{
+				Formatting = Formatting.Indented
+			};
+			filename = Path.Combine(TestContext.ResultsDirectory, filename);
+			using (var writer = new StreamWriter(filename))
+			{
+				serializer.Serialize(writer, gtfs);
+			}
+			TestContext.AddResultFile(filename);
+		}
+
 	}
 }

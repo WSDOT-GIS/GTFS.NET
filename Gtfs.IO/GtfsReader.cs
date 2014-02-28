@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using Wsdot.Gtfs.Contract;
 using Wsdot.Gtfs.IO.ClassMap;
+using Wsdot.Gtfs.Contract.GeoJson;
 
 namespace Wsdot.Gtfs.IO
 {
@@ -116,7 +117,7 @@ namespace Wsdot.Gtfs.IO
 			var feed = new GtfsFeed
 			{
 				Agency = options.HasFlag(GtfsFileOptions.Agency) ? zip.ParseCsv<Agency>("agency.txt", true) : null,
-				Stops =  options.HasFlag(GtfsFileOptions.Stops) ? zip.ParseCsv<Stop>("stops.txt", true) : null,
+				Stops =  options.HasFlag(GtfsFileOptions.Stops) ? zip.ParseCsv<Stop>("stops.txt", true).ToFeatureCollection() : null,
 				Routes = options.HasFlag(GtfsFileOptions.Routes) ? zip.ParseCsv<Route>("routes.txt", true) : null,
 				Trips = options.HasFlag(GtfsFileOptions.Trips) ? zip.ParseCsv<Trip>("trips.txt", true) : null,
 				StopTimes =options.HasFlag(GtfsFileOptions.StopTimes) ?  zip.ParseCsv<StopTime>("stop_times.txt", true) : null,
@@ -124,7 +125,7 @@ namespace Wsdot.Gtfs.IO
 				CalendarDates = options.HasFlag(GtfsFileOptions.CalendarDates) ? zip.ParseCsv<CalendarDate>("calendar_dates.txt") : null,
 				FareAttributes = options.HasFlag(GtfsFileOptions.FareAttributes) ? zip.ParseCsv<FareAttribute>("fare_attributes.txt") : null,
 				FareRules = options.HasFlag(GtfsFileOptions.FareRules) ? zip.ParseCsv<FareRule>("fare_rules.txt") : null,
-				Shapes = options.HasFlag(GtfsFileOptions.Shapes) ? zip.ParseCsv<Shape>("shapes.txt") : null,
+				Shapes = options.HasFlag(GtfsFileOptions.Shapes) ? zip.ParseCsv<Shape>("shapes.txt").ToFeatureCollection() : null,
 				Frequencies = options.HasFlag(GtfsFileOptions.Frequencies) ? zip.ParseCsv<Frequency>("frequencies.txt") : null,
 				Transfers = options.HasFlag(GtfsFileOptions.Transfers) ? zip.ParseCsv<Transfer>("transfers.txt") : null
 			};
