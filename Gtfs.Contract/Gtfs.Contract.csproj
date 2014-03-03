@@ -44,6 +44,7 @@
     <Compile Include="Feed.cs" />
     <Compile Include="FeedInfo.cs" />
     <Compile Include="Frequency.cs" />
+    <Compile Include="GeoJson\Extensions.cs" />
     <Compile Include="GeoJson\GeoJson.cs" />
     <Compile Include="GeoJson\StopFeatureProperties.cs" />
     <Compile Include="PaymentMethod.cs" />

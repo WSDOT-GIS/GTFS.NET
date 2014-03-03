@@ -7,7 +7,8 @@ A .NET library for reading [General Transit Feet Specification] files.
 
 ### Gtfs.Contract ###
 
-This assembly contains the data contracts used by the other assemblies.
+This assembly contains the data contracts used by the other assemblies. 
+These classes are designed to be easily serialized and deserialized by [JSON.NET].
 
 ### Gtfs.IO ###
 
@@ -31,5 +32,6 @@ Visual Studio 2012
 [CsvHelper]:http://joshclose.github.io/CsvHelper/
 [General Transit Feet Specification]:https://developers.google.com/transit/gtfs/
 [GTFS]:https://developers.google.com/transit/gtfs/
+[JSON.NET]:http://james.newtonking.com/json
 [The MIT License]:http://choosealicense.com/licenses/mit/
 [NuGet]:https://www.nuget.org/
