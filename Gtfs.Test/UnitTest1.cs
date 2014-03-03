@@ -151,7 +151,7 @@ namespace Wsdot.Gtfs.Test
 			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
 			var gtfs = ReadGtfsFromWeb(zipUrl);
 			Assert.IsTrue(gtfs.Shapes.features.Length > 0, "Shapes should not be empty.");
-			SerializeGtfs(gtfs, "intercity-transit.txt");
+			SerializeGtfs(gtfs, "intercity-transit.json");
 		}
 
 		/// <summary>
@@ -258,7 +258,8 @@ namespace Wsdot.Gtfs.Test
 		{
 			var serializer = new JsonSerializer()
 			{
-				Formatting = Formatting.Indented
+				Formatting = Formatting.Indented,
+				NullValueHandling = NullValueHandling.Ignore
 			};
 			filename = Path.Combine(TestContext.ResultsDirectory, filename);
 			using (var writer = new StreamWriter(filename))
