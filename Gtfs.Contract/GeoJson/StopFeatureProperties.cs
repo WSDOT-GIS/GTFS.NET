@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Wsdot.Gtfs.Contract.GeoJson
 {
+	/// <summary>
+	/// Represents a GeoJSON feature containing GTFS <see cref="Stop"/> data.
+	/// </summary>
 	public class StopFeatureProperties
 	{
 		/// <summary>
