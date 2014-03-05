@@ -71,5 +71,10 @@ namespace Wsdot.Gtfs.Contract
 		/// Indicates wheelchair accessibility
 		/// </summary>
 		public WheelchairAccessibility wheelchair_accessible { get; set; }
+
+		/// <summary>
+		/// Indicates whether bikes are allowed.
+		/// </summary>
+		public BikesAllowed bikes_allowed { get; set; }
 	}
 }
