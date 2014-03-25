@@ -44,6 +44,10 @@ namespace Wsdot.Gtfs.IO
 				{
 					csvReader.Configuration.RegisterClassMap<StopTimeMap>();
 				}
+				else if (t == typeof(FeedInfo))
+				{
+					csvReader.Configuration.RegisterClassMap<FeedInfoMap>();
+				}
 
 				try
 				{
