@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using Wsdot.Gtfs.Contract;
 using Wsdot.Gtfs.Contract.GeoJson;
 using Wsdot.Gtfs.IO;
@@ -51,11 +52,11 @@ namespace Wsdot.Gtfs.Test
 
 			Assert.IsTrue(File.Exists(zipPath), "File not found: {0}", Path.GetFullPath(zipPath));
 
-			GtfsFeed gtfs;
+			GtfsFeed gtfs = null;
 
 			using (FileStream stream = File.Open(zipPath, FileMode.Open, FileAccess.Read))
 			{
-				gtfs = stream.ReadGtfs();
+				stream.ReadGtfsAsync().ContinueWith(t => gtfs = t.Result).Wait();
 			}
 
 			RunTestsOnGtfs(gtfs);
@@ -75,12 +76,12 @@ namespace Wsdot.Gtfs.Test
 
 			Assert.IsTrue(File.Exists(zipPath), "File not found: {0}", Path.GetFullPath(zipPath));
 
-			GtfsFeed gtfs;
+			GtfsFeed gtfs = null;
 
 
 			using (FileStream stream = File.Open(zipPath, FileMode.Open, FileAccess.Read))
 			{
-				gtfs = stream.ReadGtfs(options);
+				stream.ReadGtfsAsync(options).ContinueWith(t => gtfs = t.Result).Wait();
 			}
 
 			var properties = typeof(GtfsFeed).GetProperties();
@@ -101,18 +102,13 @@ namespace Wsdot.Gtfs.Test
 			}
 		}
 
-		private GtfsFeed ReadGtfsFromWeb(string url = null)
+		private async Task<GtfsFeed> ReadGtfsFromWeb(string url = null)
 		{
 			GtfsFeed gtfs = null;
 			using (var httpClient = new HttpClient())
+			using (var stream = await httpClient.GetStreamAsync(url))
 			{
-				httpClient.GetStreamAsync(url).ContinueWith(t =>
-				{
-					using (t.Result)
-					{
-						gtfs = t.Result.ReadGtfs();
-					}
-				}).Wait();
+				stream.ReadGtfsAsync().ContinueWith(t => gtfs = t.Result).Wait();
 			}
 
 			RunTestsOnGtfs(gtfs);
@@ -127,7 +123,7 @@ namespace Wsdot.Gtfs.Test
 		public void ReadJeffersonGtfsFromWeb()
 		{
 			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
-			ReadGtfsFromWeb(zipUrl);
+			ReadGtfsFromWeb(zipUrl).Wait();
 		}
 
 		/// <summary>
@@ -138,7 +134,7 @@ namespace Wsdot.Gtfs.Test
 		public void ReadCityOfSeattleGtfsFromWeb()
 		{
 			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
-			ReadGtfsFromWeb(zipUrl);
+			ReadGtfsFromWeb(zipUrl).Wait();
 		}
 
 		/// <summary>
@@ -149,7 +145,8 @@ namespace Wsdot.Gtfs.Test
 		public void ReadITFromWeb()
 		{
 			var zipUrl = MethodInfo.GetCurrentMethod().GetTestProperty("url");
-			var gtfs = ReadGtfsFromWeb(zipUrl);
+			GtfsFeed gtfs = null;
+			ReadGtfsFromWeb(zipUrl).ContinueWith(g => gtfs = g.Result).Wait();
 			Assert.IsTrue(gtfs.Shapes.features.Length > 0, "Shapes should not be empty.");
 			SerializeGtfs(gtfs, "intercity-transit.json");
 		}
@@ -262,10 +259,13 @@ namespace Wsdot.Gtfs.Test
 				NullValueHandling = NullValueHandling.Ignore
 			};
 			filename = Path.Combine(TestContext.ResultsDirectory, filename);
-			using (var writer = new StreamWriter(filename))
+			Task.Run(() =>
 			{
-				serializer.Serialize(writer, gtfs);
-			}
+				using (var writer = new StreamWriter(filename))
+				{
+					serializer.Serialize(writer, gtfs);
+				}
+			}).Wait();
 			TestContext.AddResultFile(filename);
 		}
 
