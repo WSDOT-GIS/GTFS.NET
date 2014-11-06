@@ -25,13 +25,8 @@ This assembly contains Visual Studio unit tests.
 
 Visual Studio 2012
 
-## License ##
-[The MIT License]
-
-
 [CsvHelper]:http://joshclose.github.io/CsvHelper/
 [General Transit Feet Specification]:https://developers.google.com/transit/gtfs/
 [GTFS]:https://developers.google.com/transit/gtfs/
 [JSON.NET]:http://james.newtonking.com/json
-[The MIT License]:http://choosealicense.com/licenses/mit/
 [NuGet]:https://www.nuget.org/
