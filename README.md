@@ -1,7 +1,7 @@
 GTFS.NET
 ========
 
-A .NET library for reading [General Transit Feet Specification] files.
+A .NET library for reading [General Transit Feed Specification] files.
 
 ## Components ##
 
@@ -26,7 +26,7 @@ This assembly contains Visual Studio unit tests.
 Visual Studio 2012
 
 [CsvHelper]:http://joshclose.github.io/CsvHelper/
-[General Transit Feet Specification]:https://developers.google.com/transit/gtfs/
+[General Transit Feed Specification]:https://developers.google.com/transit/gtfs/
 [GTFS]:https://developers.google.com/transit/gtfs/
 [JSON.NET]:http://james.newtonking.com/json
 [NuGet]:https://www.nuget.org/
